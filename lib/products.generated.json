@@ -1,0 +1,1221 @@
+{
+  "literary-1": {
+    "title": "Literary 1",
+    "description": "",
+    "menuImage": null,
+    "menuImageAlt": "Literary 1",
+    "buttonImage": "/images/collections/literary-1/assets/button.webp",
+    "href": "literary/1",
+    "price": null,
+    "sets": [
+      {
+        "title": "Austen",
+        "titleCard": "/images/collections/literary-1/austen/title-card.webp",
+        "presets": [
+          {
+            "title": "Dashwood",
+            "author": "Austen",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/austen/dashwood/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/austen/dashwood/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Fanny",
+            "author": "Austen",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/austen/fanny/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/austen/fanny/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Highbury",
+            "author": "Austen",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/austen/highbury/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/austen/highbury/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Longbourn",
+            "author": "Austen",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/austen/longbourn/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/austen/longbourn/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Tilney",
+            "author": "Austen",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/austen/tilney/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/austen/tilney/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Dickens",
+        "titleCard": "/images/collections/literary-1/dickens/title-card.webp",
+        "presets": [
+          {
+            "title": "Chesney Wold",
+            "author": "Dickens",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/dickens/chesney-wold/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/dickens/chesney-wold/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Dotheboys",
+            "author": "Dickens",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/dickens/dotheboys/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/dickens/dotheboys/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Gradgrind",
+            "author": "Dickens",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/dickens/gradgrind/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/dickens/gradgrind/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Havisham",
+            "author": "Dickens",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/dickens/havisham/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/dickens/havisham/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Tattycoram",
+            "author": "Dickens",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/dickens/tattycoram/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/dickens/tattycoram/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Fitzgerald",
+        "titleCard": "/images/collections/literary-1/fitzgerald/title-card.webp",
+        "presets": [
+          {
+            "title": "Gloria",
+            "author": "Fitzgerald",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/gloria/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/gloria/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Morningside Heights",
+            "author": "Fitzgerald",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/morningside-heights/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/morningside-heights/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Myrtle",
+            "author": "Fitzgerald",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/myrtle/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/myrtle/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Rosalind",
+            "author": "Fitzgerald",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/rosalind/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/rosalind/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Valley Of Ashes",
+            "author": "Fitzgerald",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/valley-of-ashes/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/valley-of-ashes/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "West Egg",
+            "author": "Fitzgerald",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/west-egg/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/fitzgerald/west-egg/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Poe",
+        "titleCard": "/images/collections/literary-1/poe/title-card.webp",
+        "presets": [
+          {
+            "title": "Dupin",
+            "author": "Poe",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/poe/dupin/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/poe/dupin/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Ligeia",
+            "author": "Poe",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/poe/ligeia/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/poe/ligeia/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Prospero",
+            "author": "Poe",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/poe/prospero/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/poe/prospero/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Roderick",
+            "author": "Poe",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/poe/roderick/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/poe/roderick/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Rowena",
+            "author": "Poe",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/poe/rowena/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/poe/rowena/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Ulalume",
+            "author": "Poe",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/poe/ulalume/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/poe/ulalume/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Weir",
+            "author": "Poe",
+            "before": {
+              "imageUrl": "/images/collections/literary-1/poe/weir/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-1/poe/weir/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      }
+    ]
+  },
+  "literary-2": {
+    "title": "Literary 2",
+    "description": "",
+    "menuImage": null,
+    "menuImageAlt": "Literary 2",
+    "buttonImage": "/images/collections/literary-2/assets/button.webp",
+    "href": "literary/2",
+    "price": null,
+    "sets": [
+      {
+        "title": "Baldwin",
+        "titleCard": "/images/collections/literary-2/Baldwin/title_card.webp",
+        "presets": [
+          {
+            "title": "David",
+            "author": "Baldwin",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/david/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/david/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Fonny",
+            "author": "Baldwin",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/fonny/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/fonny/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Grimes",
+            "author": "Baldwin",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/grimes/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/grimes/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Ida",
+            "author": "Baldwin",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/ida/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/ida/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Sonny",
+            "author": "Baldwin",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/sonny/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Baldwin/sonny/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "London",
+        "titleCard": "/images/collections/literary-2/London/title_card.webp",
+        "presets": [
+          {
+            "title": "Chechaquo",
+            "author": "London",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/London/chechaquo/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/London/chechaquo/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Ghost",
+            "author": "London",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/London/ghost/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/London/ghost/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Lizzie",
+            "author": "London",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/London/lizzie/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/London/lizzie/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Pocket Miner",
+            "author": "London",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/London/pocket miner/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/London/pocket miner/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Spitz",
+            "author": "London",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/London/spitz/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/London/spitz/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Melville",
+        "titleCard": "/images/collections/literary-2/Melville/title_card.webp",
+        "presets": [
+          {
+            "title": "Aladdinspalace",
+            "author": "Melville",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Melville/aladdinspalace/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Melville/aladdinspalace/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Bellipotent",
+            "author": "Melville",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Melville/bellipotent/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Melville/bellipotent/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Gingernut",
+            "author": "Melville",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Melville/gingernut/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Melville/gingernut/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Marnoo",
+            "author": "Melville",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Melville/marnoo/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Melville/marnoo/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Pequod",
+            "author": "Melville",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Melville/pequod/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Melville/pequod/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Wharton",
+        "titleCard": "/images/collections/literary-2/Wharton/title_card.webp",
+        "presets": [
+          {
+            "title": "Gryce",
+            "author": "Wharton",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Wharton/gryce/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Wharton/gryce/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Mattie",
+            "author": "Wharton",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Wharton/mattie/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Wharton/mattie/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Olenska",
+            "author": "Wharton",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Wharton/olenska/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Wharton/olenska/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Tintagel",
+            "author": "Wharton",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Wharton/tintagel/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Wharton/tintagel/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Violet",
+            "author": "Wharton",
+            "before": {
+              "imageUrl": "/images/collections/literary-2/Wharton/violet/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/literary-2/Wharton/violet/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      }
+    ]
+  },
+  "poets-1": {
+    "title": "Poets 1",
+    "description": "",
+    "menuImage": null,
+    "menuImageAlt": "Poets 1",
+    "buttonImage": "/images/collections/poets-1/assets/button.webp",
+    "href": "poets/1",
+    "price": null,
+    "sets": [
+      {
+        "title": "Dickinson",
+        "titleCard": "/images/collections/poets-1/dickinson/title_card.webp",
+        "presets": [
+          {
+            "title": "Amber Hand",
+            "author": "Dickinson",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/dickinson/AmberHand/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/dickinson/AmberHand/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Gossamer",
+            "author": "Dickinson",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/dickinson/Gossamer/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/dickinson/Gossamer/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Pompeii",
+            "author": "Dickinson",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/dickinson/Pompeii/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/dickinson/Pompeii/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Stillness",
+            "author": "Dickinson",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/dickinson/Stillness/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/dickinson/Stillness/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Velvet Masonry",
+            "author": "Dickinson",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/dickinson/VelvetMasonry/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/dickinson/VelvetMasonry/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Wcw",
+        "titleCard": "/images/collections/poets-1/wcw/title_card.webp",
+        "presets": [
+          {
+            "title": "Black Winged",
+            "author": "Wcw",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wcw/BlackWinged/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wcw/BlackWinged/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Glazed",
+            "author": "Wcw",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wcw/Glazed/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wcw/Glazed/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Green Bottle",
+            "author": "Wcw",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wcw/GreenBottle/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wcw/GreenBottle/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Lonely",
+            "author": "Wcw",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wcw/Lonely/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wcw/Lonely/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "So Sweet",
+            "author": "Wcw",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wcw/SoSweet/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wcw/SoSweet/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Wheatley",
+        "titleCard": "/images/collections/poets-1/wheatley/title_card.webp",
+        "presets": [
+          {
+            "title": "Aurora",
+            "author": "Wheatley",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wheatley/Aurora/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wheatley/Aurora/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Auspicious Queen",
+            "author": "Wheatley",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wheatley/AuspiciousQueen/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wheatley/AuspiciousQueen/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Avis",
+            "author": "Wheatley",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wheatley/Avis/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wheatley/Avis/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Fancy",
+            "author": "Wheatley",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wheatley/Fancy/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wheatley/Fancy/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Radiant Hinges",
+            "author": "Wheatley",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/wheatley/RadiantHinges/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/wheatley/RadiantHinges/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Whitman",
+        "titleCard": "/images/collections/poets-1/whitman/title_card.webp",
+        "presets": [
+          {
+            "title": "Body Electric",
+            "author": "Whitman",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/whitman/BodyElectric/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/whitman/BodyElectric/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Filament",
+            "author": "Whitman",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/whitman/Filament/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/whitman/Filament/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Foray",
+            "author": "Whitman",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/whitman/Foray/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/whitman/Foray/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Sprig",
+            "author": "Whitman",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/whitman/Sprig/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/whitman/Sprig/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Varied Carols",
+            "author": "Whitman",
+            "before": {
+              "imageUrl": "/images/collections/poets-1/whitman/VariedCarols/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/poets-1/whitman/VariedCarols/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      }
+    ]
+  },
+  "southern_drunks": {
+    "title": "Southern Drunks",
+    "description": "",
+    "menuImage": null,
+    "menuImageAlt": "Southern Drunks",
+    "buttonImage": "/images/collections/southern_drunks/assets/button.webp",
+    "href": "southern-drunks",
+    "price": null,
+    "sets": [
+      {
+        "title": "Capote",
+        "titleCard": "/images/collections/southern_drunks/capote/title_card.webp",
+        "presets": [
+          {
+            "title": "Clutter",
+            "author": "Capote",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/capote/clutter/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/capote/clutter/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Golightly",
+            "author": "Capote",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/capote/golightly/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/capote/golightly/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Skully",
+            "author": "Capote",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/capote/skully/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/capote/skully/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Sook",
+            "author": "Capote",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/capote/sook/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/capote/sook/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Talbo",
+            "author": "Capote",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/capote/talbo/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/capote/talbo/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Faulkner",
+        "titleCard": "/images/collections/southern_drunks/faulkner/title_card.webp",
+        "presets": [
+          {
+            "title": "Addie",
+            "author": "Faulkner",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/addie/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/addie/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Hogganbeck",
+            "author": "Faulkner",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/hogganbeck/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/hogganbeck/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Homer",
+            "author": "Faulkner",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/homer/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/homer/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Lena",
+            "author": "Faulkner",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/lena/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/lena/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Snopes",
+            "author": "Faulkner",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/snopes/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/faulkner/snopes/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Henry",
+        "titleCard": "/images/collections/southern_drunks/henry/title_card.webp",
+        "presets": [
+          {
+            "title": "Behrman",
+            "author": "Henry",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/henry/behrman/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/henry/behrman/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Billy Jackson",
+            "author": "Henry",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/henry/billy jackson/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/henry/billy jackson/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Christmas",
+            "author": "Henry",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/henry/christmas/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/henry/christmas/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Hetty",
+            "author": "Henry",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/henry/hetty/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/henry/hetty/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Johnny",
+            "author": "Henry",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/henry/johnny/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/henry/johnny/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Williams",
+        "titleCard": "/images/collections/southern_drunks/williams/title_card.webp",
+        "presets": [
+          {
+            "title": "Alma",
+            "author": "Williams",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/williams/alma/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/williams/alma/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Cabeza De Lobo",
+            "author": "Williams",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/williams/cabeza de lobo/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/williams/cabeza de lobo/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Dubois",
+            "author": "Williams",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/williams/dubois/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/williams/dubois/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Mendacity",
+            "author": "Williams",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/williams/mendacity/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/williams/mendacity/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Nightingale",
+            "author": "Williams",
+            "before": {
+              "imageUrl": "/images/collections/southern_drunks/williams/nightingale/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/southern_drunks/williams/nightingale/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      }
+    ]
+  }
+}
