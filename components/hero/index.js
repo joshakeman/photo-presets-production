@@ -13,7 +13,7 @@ export default function Hero() {
         {/* Decorative images: aria-hidden="true" for screen readers */}
         <div className="flex justify-center items-center p-4">
           <div className="px-3.5">
-            <h2 className="french-news text-center text-xl leading-loose">
+            <h2 className="french-news text-center text-4xl leading-loose">
               Instantly{" "}
               <span className="text-accent italic">Transmogriphy</span> Your
               Photographs with
@@ -36,7 +36,7 @@ export default function Hero() {
         {/* More descriptive heading */}
         <h2
           id="stunning-text"
-          className="french-news text-2xl text-center menu-text mt-4 mb-8"
+          className="french-news text-4xl text-center menu-text mt-4 mb-8"
           aria-labelledby="stunning-text"
         >
           Examine our gallery of transformations below!
