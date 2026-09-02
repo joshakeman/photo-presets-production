@@ -1,4 +1,4 @@
-// scripts/syncImages.js
+// scripts/syncContent.js
 import dotenv from "dotenv";
 dotenv.config();
 import fs from "fs";
@@ -14,13 +14,9 @@ const dbx = new Dropbox({ accessToken: process.env.DROPBOX_TOKEN, fetch });
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// (Optional initial check of root entries)
-const { result: rootResult } = await dbx.filesListFolder({ path: "" });
-console.log("📁 Found root entries:");
-rootResult.entries.forEach((e) => console.log(`- ${e.name} (${e[".tag"]})`));
-
 const DROPBOX_SOURCE_FOLDER = "/josh-and-brad/photo-presets/collections";
 const LOCAL_OUTPUT_DIR = path.join(__dirname, "../public/images/collections");
+const PNG_TRANSFORM_VERSION = 1;
 
 const revStorePath = path.join(__dirname, "imageRevisions.json");
 let revStore = {};
@@ -29,7 +25,7 @@ if (fs.existsSync(revStorePath)) {
   revStore = JSON.parse(fs.readFileSync(revStorePath, "utf-8"));
 }
 
-async function syncImages() {
+async function syncContent() {
   const { result } = await dbx.filesListFolder({
     path: DROPBOX_SOURCE_FOLDER,
     recursive: true,
@@ -46,9 +42,14 @@ async function syncImages() {
   for (const entry of imageEntries) {
     const dropboxPath = entry.path_lower;
     const rev = entry.rev;
+    const sourceExtension = path.extname(entry.name).toLowerCase();
+    const revisionKey =
+      sourceExtension === ".png"
+        ? `${rev}:png-lossless-v${PNG_TRANSFORM_VERSION}`
+        : rev;
 
     // Step 3: Skip unchanged files
-    if (revStore[dropboxPath] === rev) {
+    if (revStore[dropboxPath] === revisionKey) {
       console.log(`⏩ Skipping unchanged file: ${dropboxPath}`);
       continue;
     }
@@ -70,10 +71,20 @@ async function syncImages() {
       fileResult.fileBinary ||
       Buffer.from(await fileResult.fileBlob.arrayBuffer());
 
-    await sharp(buffer).resize(1600).webp({ quality: 80 }).toFile(localPath);
+    const image = sharp(buffer).resize({
+      width: 1600,
+      withoutEnlargement: true,
+    });
+
+    if (sourceExtension === ".png") {
+      await image.webp({ lossless: true }).toFile(localPath);
+    } else {
+      await image.webp({ quality: 80 }).toFile(localPath);
+    }
 
     // ✅ Step 3: Store the new rev after conversion
-    revStore[dropboxPath] = rev;
+    revStore[dropboxPath] = revisionKey;
+    fs.writeFileSync(revStorePath, JSON.stringify(revStore, null, 2));
 
     console.log(`✅ ${entry.name} → ${localPath}`);
   }
@@ -84,6 +95,6 @@ async function syncImages() {
   console.log("🎉 Sync complete!");
 }
 
-syncImages().catch((err) => {
-  console.error("❌ Error syncing images:", err);
+syncContent().catch((err) => {
+  console.error("❌ Error syncing content:", err);
 });
