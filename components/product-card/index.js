@@ -1,4 +1,4 @@
-import { useAuth } from "../hooks/useAuth";
+import { useAuth } from "../../context/authContext";
 import { useCart } from "../context/CartContext";
 
 export default function ProductCard({ product }) {

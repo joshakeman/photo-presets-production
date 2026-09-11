@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { products } from "../../lib/products";
-import { useAuth } from "../../hooks/useAuth";
+import { useAuth } from "../../context/authContext";
 import { useCart } from "../../context/CartContext";
 import AddToCartButton from "../add-to-cart-button";
 import Link from "next/link";

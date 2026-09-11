@@ -1,35 +1,88 @@
-// hooks/AuthContext.js
 import { createContext, useContext, useEffect, useState } from "react";
-import netlifyIdentity from "netlify-identity-widget";
+import {
+  acceptInvite as identityAcceptInvite,
+  getUser,
+  handleAuthCallback,
+  login as identityLogin,
+  logout as identityLogout,
+  onAuthChange,
+  requestPasswordRecovery,
+  signup as identitySignup,
+  updateUser,
+} from "@netlify/identity";
 
 const AuthContext = createContext();
+const AUTH_HASH_PATTERN =
+  /^#(confirmation_token|recovery_token|invite_token|email_change_token|access_token)=/;
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
+  const [authReady, setAuthReady] = useState(false);
 
   useEffect(() => {
-    netlifyIdentity.init();
+    let active = true;
+    const unsubscribe = onAuthChange((_event, nextUser) => {
+      if (active) setUser(nextUser);
+    });
 
-    const currentUser = netlifyIdentity.currentUser();
-    if (currentUser) setUser(currentUser);
+    async function initializeAuth() {
+      try {
+        if (AUTH_HASH_PATTERN.test(window.location.hash)) {
+          const result = await handleAuthCallback();
+          if (!active || !result) return;
 
-    const handleLogin = (user) => setUser(user);
-    const handleLogout = () => setUser(null);
+          if (result.type === "recovery") {
+            window.location.replace("/account?mode=recovery");
+            return;
+          }
+          if (result.type === "invite" && result.token) {
+            window.location.replace(
+              `/account?mode=invite&token=${encodeURIComponent(result.token)}`,
+            );
+            return;
+          }
+          window.location.replace("/account?confirmed=1");
+          return;
+        }
 
-    netlifyIdentity.on("login", handleLogin);
-    netlifyIdentity.on("logout", handleLogout);
+        const currentUser = await getUser();
+        if (active) setUser(currentUser);
+      } catch (error) {
+        console.error("Identity initialization failed:", error);
+      } finally {
+        if (active) setAuthReady(true);
+      }
+    }
 
+    initializeAuth();
     return () => {
-      netlifyIdentity.off("login", handleLogin);
-      netlifyIdentity.off("logout", handleLogout);
+      active = false;
+      unsubscribe();
     };
   }, []);
 
-  const login = () => netlifyIdentity.open("login");
-  const logout = () => netlifyIdentity.logout();
+  const login = async (email, password) => identityLogin(email, password);
+  const signup = async (email, password) => identitySignup(email, password);
+  const logout = async () => identityLogout();
+  const sendPasswordRecovery = async (email) => requestPasswordRecovery(email);
+  const resetPassword = async (password) => updateUser({ password });
+  const acceptInvite = async (token, password) =>
+    identityAcceptInvite(token, password);
 
   return (
-    <AuthContext.Provider value={{ user, isLoggedIn: !!user, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        authReady,
+        isLoggedIn: Boolean(user),
+        login,
+        signup,
+        logout,
+        sendPasswordRecovery,
+        resetPassword,
+        acceptInvite,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

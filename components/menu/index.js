@@ -14,7 +14,7 @@ import Search from "../../public/images/assets/search.webp";
 import Logo from "../../public/images/hero-image/logo-no-background.png";
 
 const menuItems = [
-  { label: "Account", href: "/orders", image: Hat },
+  { label: "Account", href: "/account", image: Hat },
   { label: "Presets Gallery", href: "/#collections", image: Brush },
   { label: "Portmanteau", href: "/cart", image: Portmanteau },
   { label: "Manual", href: "/manual", image: Manual },
