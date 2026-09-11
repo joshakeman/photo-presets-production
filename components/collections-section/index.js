@@ -12,6 +12,7 @@ export default function CollectionsSection() {
 
   return (
     <section
+      id="collections"
       className="container mx-auto max-w-6xl p-4"
       aria-labelledby="collections-heading"
     >
