@@ -37,29 +37,10 @@
 //   );
 // }
 
-import { useState } from "react";
 import { ReactCompareSliderImage } from "react-compare-slider";
 
 export default function BlurredSliderImage({ src, alt }) {
-  const [isLoaded, setIsLoaded] = useState(false);
-
   return (
-    <div className="relative w-full">
-      {/* Blurred Loading Placeholder */}
-      <div
-        className={`absolute inset-0 bg-gray-300 transition-all duration-700 
-        ${isLoaded ? "opacity-0" : "opacity-100 blur-lg"}`}
-      ></div>
-
-      {/* Actual Image */}
-      <ReactCompareSliderImage
-        src={src}
-        alt={alt}
-        className={`transition-all duration-700 ${
-          isLoaded ? "opacity-100 blur-0" : "opacity-0"
-        }`}
-        onLoad={() => setIsLoaded(true)}
-      />
-    </div>
+    <ReactCompareSliderImage src={src} alt={alt} loading="lazy" />
   );
 }

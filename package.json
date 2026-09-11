@@ -1,10 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "prebuild": "node sync-cloudinary.js",
+    "prebuild": "node scripts/generateProducts.js",
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "upload:content": "node scripts/uploadContent.js",
+    "dropbox:authorize": "node scripts/authorizeDropbox.js"
   },
   "dependencies": {
     "@stripe/stripe-js": "^5.5.0",

@@ -4,13 +4,12 @@ dotenv.config();
 import fs from "fs";
 import path from "path";
 import sharp from "sharp";
-import { Dropbox } from "dropbox";
-import fetch from "node-fetch";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import { generateProducts } from "./generateProducts.js";
+import { createDropboxClient } from "./dropboxClient.js";
 
-const dbx = new Dropbox({ accessToken: process.env.DROPBOX_TOKEN, fetch });
+const dbx = createDropboxClient();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -25,6 +24,50 @@ let revStore = {};
 
 if (fs.existsSync(revStorePath)) {
   revStore = JSON.parse(fs.readFileSync(revStorePath, "utf-8"));
+}
+
+function localPathForEntry(entry) {
+  const relativePath = entry.path_display.replace(DROPBOX_SOURCE_FOLDER, "");
+  const isTextFile = path.extname(entry.name).toLowerCase() === ".txt";
+
+  return isTextFile
+    ? path.join(LOCAL_METADATA_DIR, relativePath)
+    : path.join(
+        LOCAL_OUTPUT_DIR,
+        relativePath.replace(/\.[^/.]+$/, ".webp"),
+      );
+}
+
+function removeStaleFiles(directory, acceptedExtension, expectedPaths) {
+  if (!fs.existsSync(directory)) return 0;
+
+  let removed = 0;
+
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const entryPath = path.join(directory, entry.name);
+
+    if (entry.isDirectory()) {
+      removed += removeStaleFiles(
+        entryPath,
+        acceptedExtension,
+        expectedPaths,
+      );
+
+      if (fs.readdirSync(entryPath).length === 0) {
+        fs.rmdirSync(entryPath);
+      }
+    } else if (
+      entry.isFile() &&
+      path.extname(entry.name).toLowerCase() === acceptedExtension &&
+      !expectedPaths.has(path.resolve(entryPath))
+    ) {
+      fs.unlinkSync(entryPath);
+      removed += 1;
+      console.log(`🗑️ Removed stale file: ${entryPath}`);
+    }
+  }
+
+  return removed;
 }
 
 async function syncContent() {
@@ -47,6 +90,19 @@ async function syncContent() {
     (entry) =>
       entry[".tag"] === "file" && /\.(jpe?g|png|txt)$/i.test(entry.name),
   );
+  const expectedImagePaths = new Set(
+    contentEntries
+      .filter((entry) => path.extname(entry.name).toLowerCase() !== ".txt")
+      .map((entry) => path.resolve(localPathForEntry(entry))),
+  );
+  const expectedMetadataPaths = new Set(
+    contentEntries
+      .filter((entry) => path.extname(entry.name).toLowerCase() === ".txt")
+      .map((entry) => path.resolve(localPathForEntry(entry))),
+  );
+  const currentDropboxPaths = new Set(
+    contentEntries.map((entry) => entry.path_lower),
+  );
 
   for (const entry of contentEntries) {
     const dropboxPath = entry.path_lower;
@@ -60,13 +116,7 @@ async function syncContent() {
     const cachedRevision = revStore[dropboxPath];
     const hasCurrentDropboxRevision =
       cachedRevision === rev || cachedRevision?.startsWith(`${rev}:`);
-    const relativePath = entry.path_display.replace(DROPBOX_SOURCE_FOLDER, "");
-    const localPath = isTextFile
-      ? path.join(LOCAL_METADATA_DIR, relativePath)
-      : path.join(
-          LOCAL_OUTPUT_DIR,
-          relativePath.replace(/\.[^/.]+$/, ".webp"),
-        );
+    const localPath = localPathForEntry(entry);
 
     // Step 3: Skip unchanged files
     if (hasCurrentDropboxRevision && fs.existsSync(localPath)) {
@@ -106,6 +156,30 @@ async function syncContent() {
 
     console.log(`✅ ${entry.name} → ${localPath}`);
   }
+
+  const removedImages = removeStaleFiles(
+    LOCAL_OUTPUT_DIR,
+    ".webp",
+    expectedImagePaths,
+  );
+  const removedMetadata = removeStaleFiles(
+    LOCAL_METADATA_DIR,
+    ".txt",
+    expectedMetadataPaths,
+  );
+
+  for (const dropboxPath of Object.keys(revStore)) {
+    if (
+      dropboxPath.startsWith(`${DROPBOX_SOURCE_FOLDER.toLowerCase()}/`) &&
+      !currentDropboxPaths.has(dropboxPath)
+    ) {
+      delete revStore[dropboxPath];
+    }
+  }
+
+  console.log(
+    `🧹 Removed ${removedImages} stale images and ${removedMetadata} stale metadata files`,
+  );
 
   // ✅ Step 4: Save revStore to file
   fs.writeFileSync(revStorePath, JSON.stringify(revStore, null, 2));

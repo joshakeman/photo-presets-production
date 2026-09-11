@@ -1,923 +1,884 @@
 {
   "literary-1": {
-    "title": "Literary 1",
-    "description": "",
-    "menuImage": null,
-    "menuImageAlt": "Literary 1",
+    "title": "Literary Collection I",
+    "description": "A collection of atmospheric presets inspired by the characters, settings, and shadowed worlds of Jane Austen, Charles Dickens, F. Scott Fitzgerald, and Edgar Allan Poe.",
+    "menuImage": "/images/collections/literary-1/assets/menu_card.webp",
+    "menuImageAlt": "A menu card representing Literary Collection I.",
     "buttonImage": "/images/collections/literary-1/assets/button.webp",
     "href": "literary/1",
-    "price": null,
+    "price": 55,
     "sets": [
       {
-        "title": "Austen",
+        "title": "Jane Austen",
         "titleCard": "/images/collections/literary-1/austen/title-card.webp",
         "presets": [
           {
             "title": "Dashwood",
-            "author": "Austen",
+            "author": "Jane Austen",
             "before": {
               "imageUrl": "/images/collections/literary-1/austen/dashwood/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/austen/dashwood/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“To be unaffected was all that a pretty girl could want to make her mind as captivating as her person.”",
+            "quotefrom": "Sense & Sensibility",
+            "alt": "Moss-covered stone arch bridge over a flowing woodland stream surrounded by dense green trees."
           },
           {
             "title": "Fanny",
-            "author": "Austen",
+            "author": "Jane Austen",
             "before": {
               "imageUrl": "/images/collections/literary-1/austen/fanny/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/austen/fanny/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“She was beyond their reach; and if at last obliged to yield—no matter—it was all misery now.”",
+            "quotefrom": "Mansfield Park",
+            "alt": "Woman in a white period dress seated by a window, holding a book and looking outside."
           },
           {
             "title": "Highbury",
-            "author": "Austen",
+            "author": "Jane Austen",
             "before": {
               "imageUrl": "/images/collections/literary-1/austen/highbury/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/austen/highbury/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“A very few to-morrows stood between the young people of Highbury and happiness.”",
+            "quotefrom": "Emma",
+            "alt": "Two men in white shirts stand behind a woman in a period dress and pearls in a green outdoor setting."
           },
           {
             "title": "Longbourn",
-            "author": "Austen",
+            "author": "Jane Austen",
             "before": {
               "imageUrl": "/images/collections/literary-1/austen/longbourn/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/austen/longbourn/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Anything beyond the very neighbourhood of Longbourn, I suppose, would appear far.”",
+            "quotefrom": "Pride & Prejudice",
+            "alt": "Large gray stone manor house with tall windows, hedges, and lawn beneath an overcast sky."
           },
           {
             "title": "Tilney",
-            "author": "Austen",
+            "author": "Jane Austen",
             "before": {
               "imageUrl": "/images/collections/literary-1/austen/tilney/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/austen/tilney/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“He was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it.”",
+            "quotefrom": "Northanger Abbey",
+            "alt": "Man in dark period clothing and a broad hat riding a black horse along a rugged coast with ruins."
           }
         ]
       },
       {
-        "title": "Dickens",
+        "title": "Charles Dickens",
         "titleCard": "/images/collections/literary-1/dickens/title-card.webp",
         "presets": [
           {
             "title": "Chesney Wold",
-            "author": "Dickens",
+            "author": "Charles Dickens",
             "before": {
               "imageUrl": "/images/collections/literary-1/dickens/chesney-wold/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/dickens/chesney-wold/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Howls the shrill wind round Chesney Wold; the sharp rain beats, the windows rattle, and the chimneys growl.”",
+            "quotefrom": "Bleak House",
+            "alt": "Woman in an elaborate black Victorian dress standing in an ornate teal room lit by candles."
           },
           {
             "title": "Dotheboys",
-            "author": "Dickens",
+            "author": "Charles Dickens",
             "before": {
               "imageUrl": "/images/collections/literary-1/dickens/dotheboys/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/dickens/dotheboys/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The walls were so stained\nand discoloured, that it was impossible to tell whether they had\never been touched with paint or whitewash.”",
+            "quotefrom": "Nicholas Nickleby",
+            "alt": "Symmetrical red-brick historic courtyard with a central clock tower beneath a blue sky."
           },
           {
             "title": "Gradgrind",
-            "author": "Dickens",
+            "author": "Charles Dickens",
             "before": {
               "imageUrl": "/images/collections/literary-1/dickens/gradgrind/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/dickens/gradgrind/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“A man of realities... ready to weigh and measure any parcel of human nature, and tell you exactly what it comes to.”",
+            "quotefrom": "Hard Times",
+            "alt": "Close side-profile portrait of a bearded man wearing a tall hat and fur-trimmed coat."
           },
           {
             "title": "Havisham",
-            "author": "Dickens",
+            "author": "Charles Dickens",
             "before": {
               "imageUrl": "/images/collections/literary-1/dickens/havisham/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/dickens/havisham/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“I saw that the bride within the bridal dress had withered like the dress, and like the flowers, and had no brightness left but the brightness of her sunken eyes.”",
+            "quotefrom": "Great Expectations",
+            "alt": "Dark, weathered ornamental wall partly covered by shadowy dried foliage and flowers."
           },
           {
             "title": "Tattycoram",
-            "author": "Dickens",
+            "author": "Charles Dickens",
             "before": {
               "imageUrl": "/images/collections/literary-1/dickens/tattycoram/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/dickens/tattycoram/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“And this is how Tattycoram will be a greater traveller in course of time than Captain Cook.”",
+            "quotefrom": "Little Dorrit",
+            "alt": "Woman in a black dress and bonnet standing beside a leaf-strewn path under autumn trees."
           }
         ]
       },
       {
-        "title": "Fitzgerald",
+        "title": "F. Scott Fitzgerald",
         "titleCard": "/images/collections/literary-1/fitzgerald/title-card.webp",
         "presets": [
           {
             "title": "Gloria",
-            "author": "Fitzgerald",
+            "author": "F. Scott Fitzgerald",
             "before": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/gloria/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/gloria/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
-          },
-          {
-            "title": "Morningside Heights",
-            "author": "Fitzgerald",
-            "before": {
-              "imageUrl": "/images/collections/literary-1/fitzgerald/morningside-heights/before.webp"
-            },
-            "after": {
-              "imageUrl": "/images/collections/literary-1/fitzgerald/morningside-heights/after.webp"
-            },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Gloria was chewing an amazing gum-drop and staring moodily out the window.”",
+            "quotefrom": "The Beautiful and Damned",
+            "alt": "Man in a dark suit seated in an ornate chair with a woman in a black dress reclining across his lap."
           },
           {
             "title": "Myrtle",
-            "author": "Fitzgerald",
+            "author": "F. Scott Fitzgerald",
             "before": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/myrtle/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/myrtle/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Myrtle raised her eyebrows in despair at the shiftlessness of the lower orders.”",
+            "quotefrom": "The Great Gatsby",
+            "alt": "Two women in 1920s-style dresses and feathered headbands pose together, one holding a cigarette holder."
           },
           {
             "title": "Rosalind",
-            "author": "Fitzgerald",
+            "author": "F. Scott Fitzgerald",
             "before": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/rosalind/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/rosalind/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Always in a sort of breathless hush, as if they feared that any minute the spell would break and drop them out of this paradise of rose and flame.”",
+            "quotefrom": "This Side of Paradise",
+            "alt": "Woman in a white fur stole, pearls, and jeweled headband holding a long cigarette holder in a dark room."
           },
           {
-            "title": "Valley Of Ashes",
-            "author": "Fitzgerald",
+            "title": "Valley of Ashes",
+            "author": "F. Scott Fitzgerald",
             "before": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/valley-of-ashes/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/valley-of-ashes/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“A fantastic farm where ashes grow like wheat into ridges and hills and grotesque gardens”",
+            "quotefrom": "The Great Gatsby",
+            "alt": "Vintage black-and-beige automobile with whitewall tires parked on grass."
           },
           {
             "title": "West Egg",
-            "author": "Fitzgerald",
+            "author": "F. Scott Fitzgerald",
             "before": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/west-egg/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/fitzgerald/west-egg/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“I drove into West Egg Village to search for her among soggy whitewashed alleys and to buy some cups and lemons and flowers.”",
+            "quotefrom": "The Great Gatsby",
+            "alt": "Grand white neoclassical mansion and formal lawn beneath a vivid blue sky."
           }
         ]
       },
       {
-        "title": "Poe",
+        "title": "Edgar Allan Poe",
         "titleCard": "/images/collections/literary-1/poe/title-card.webp",
         "presets": [
           {
             "title": "Dupin",
-            "author": "Poe",
+            "author": "Edgar Allan Poe",
             "before": {
               "imageUrl": "/images/collections/literary-1/poe/dupin/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/poe/dupin/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
-          },
-          {
-            "title": "Ligeia",
-            "author": "Poe",
-            "before": {
-              "imageUrl": "/images/collections/literary-1/poe/ligeia/before.webp"
-            },
-            "after": {
-              "imageUrl": "/images/collections/literary-1/poe/ligeia/after.webp"
-            },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“He ceased to bestir himself in the world, or to care for the retrieval of his fortunes.”",
+            "quotefrom": "The Murders in the Rue Morgue",
+            "alt": "Bearded man in a black cloak standing pensively beside a moss-covered stone wall in a misty woodland."
           },
           {
             "title": "Prospero",
-            "author": "Poe",
+            "author": "Edgar Allan Poe",
             "before": {
               "imageUrl": "/images/collections/literary-1/poe/prospero/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/poe/prospero/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“He, having attained the extremity of the velvet apartment, turned suddenly and confronted his pursuer.”",
+            "quotefrom": "The Masque of the Red Death",
+            "alt": "Plague doctor near a white tent and a group of period-costumed figures in a castle courtyard."
           },
           {
             "title": "Roderick",
-            "author": "Poe",
+            "author": "Edgar Allan Poe",
             "before": {
               "imageUrl": "/images/collections/literary-1/poe/roderick/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/poe/roderick/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“A cadaverousness of complexion; an eye large, liquid, and luminous beyond comparison.”",
+            "quotefrom": "The Fall of the House of Usher",
+            "alt": "Dark Gothic mansion among bare trees and green fog beneath an eerily illuminated sky."
           },
           {
             "title": "Rowena",
-            "author": "Poe",
+            "author": "Edgar Allan Poe",
             "before": {
               "imageUrl": "/images/collections/literary-1/poe/rowena/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/poe/rowena/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
-          },
-          {
-            "title": "Ulalume",
-            "author": "Poe",
-            "before": {
-              "imageUrl": "/images/collections/literary-1/poe/ulalume/before.webp"
-            },
-            "after": {
-              "imageUrl": "/images/collections/literary-1/poe/ulalume/after.webp"
-            },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“In her perturbed state of half-slumber, she spoke of sounds, and of motions, in and about the chamber of the turret.”",
+            "quotefrom": "Ligeia",
+            "alt": "Shadowed figure in a pale gown holding a single lit candle."
           },
           {
             "title": "Weir",
-            "author": "Poe",
+            "author": "Edgar Allan Poe",
             "before": {
               "imageUrl": "/images/collections/literary-1/poe/weir/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-1/poe/weir/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“It was down by the dank tarn of Auber, in the ghoul-haunted woodland of Weir.”",
+            "quotefrom": "Ulalume",
+            "alt": "Cluster of deep red roses emerging from a nearly black background."
           }
         ]
       }
     ]
   },
   "literary-2": {
-    "title": "Literary 2",
-    "description": "",
-    "menuImage": null,
-    "menuImageAlt": "Literary 2",
+    "title": "Literary Collection II",
+    "description": "A second volume of literary presets inspired by the vivid people and places found in the writing of James Baldwin, Jack London, Herman Melville, and Edith Wharton.",
+    "menuImage": "/images/collections/literary-2/assets/menu_card.webp",
+    "menuImageAlt": "A menu card representing Literary Collection II.",
     "buttonImage": "/images/collections/literary-2/assets/button.webp",
     "href": "literary/2",
-    "price": null,
+    "price": 55,
     "sets": [
       {
-        "title": "Baldwin",
+        "title": "James Baldwin",
         "titleCard": "/images/collections/literary-2/Baldwin/title_card.webp",
         "presets": [
           {
             "title": "David",
-            "author": "Baldwin",
+            "author": "James Baldwin",
             "before": {
               "imageUrl": "/images/collections/literary-2/Baldwin/david/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Baldwin/david/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“What was strange was that this was but one tiny aspect of the dreadful human tangle, occurring everywhere, without end, forever.”",
+            "quotefrom": "Giovanni’s Room",
+            "alt": "Two men kissing in a warmly lit bedroom beside a tall window."
           },
           {
             "title": "Fonny",
-            "author": "Baldwin",
+            "author": "James Baldwin",
             "before": {
               "imageUrl": "/images/collections/literary-2/Baldwin/fonny/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Baldwin/fonny/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The train rocked, he held me closer, and a kind of sigh I'd never heard before stifled itself in him.”",
+            "quotefrom": "If Beale Street Could Talk",
+            "alt": "Shirtless Black man wearing chains stands beneath a bright overhead light in a dark brick courtyard."
           },
           {
             "title": "Grimes",
-            "author": "Baldwin",
+            "author": "James Baldwin",
             "before": {
               "imageUrl": "/images/collections/literary-2/Baldwin/grimes/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Baldwin/grimes/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“In the eye there was a light that was not the light of Heaven, and the mouth trembled, lustful and lewd, to drink deep of the wines of Hell.”",
+            "quotefrom": "Go Tell It on the Mountain",
+            "alt": "Portrait of a Black man in a brown suit and brimmed hat against warm, blurred lights."
           },
           {
             "title": "Ida",
-            "author": "Baldwin",
+            "author": "James Baldwin",
             "before": {
               "imageUrl": "/images/collections/literary-2/Baldwin/ida/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Baldwin/ida/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“It was the way the world treated girls with bad reputations and every colored girl had been born with one.”",
+            "quotefrom": "Another Country",
+            "alt": "Elegantly dressed Black woman in a feathered hat looking toward the camera at a crowded evening gathering."
           },
           {
             "title": "Sonny",
-            "author": "Baldwin",
+            "author": "James Baldwin",
             "before": {
               "imageUrl": "/images/collections/literary-2/Baldwin/sonny/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Baldwin/sonny/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“I suppose this to mean that the song is still needed, still has work to do.”",
+            "quotefrom": "Sonny’s Blues",
+            "alt": "Silhouetted guests and a pianist in a crowded nightclub glowing with red and orange light."
           }
         ]
       },
       {
-        "title": "London",
+        "title": "Jack London",
         "titleCard": "/images/collections/literary-2/London/title_card.webp",
         "presets": [
           {
             "title": "Chechaquo",
-            "author": "London",
+            "author": "Jack London",
             "before": {
               "imageUrl": "/images/collections/literary-2/London/chechaquo/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/London/chechaquo/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The proper function of a man is to live, not to exist.”",
+            "quotefrom": "To Build a Fire",
+            "alt": "Extreme close-up of a frost-covered person's face and outstretched hand amid blowing snow."
           },
           {
             "title": "Ghost",
-            "author": "London",
+            "author": "Jack London",
             "before": {
               "imageUrl": "/images/collections/literary-2/London/ghost/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/London/ghost/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“He was not immoral, but merely unmoral.”",
+            "quotefrom": "The Sea-Wolf",
+            "alt": "Two figures standing high in the rigging of a sailing ship surrounded by calm polar water and icebergs."
           },
           {
             "title": "Lizzie",
-            "author": "London",
+            "author": "Jack London",
             "before": {
               "imageUrl": "/images/collections/literary-2/London/lizzie/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/London/lizzie/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“You belong to the legions of toil, with all that is low, and vulgar, and unbeautiful.”",
+            "quotefrom": "Martin Eden",
+            "alt": "Cropped view of a woman's hands and dark period dress while walking on a cobbled street."
           },
           {
             "title": "Pocket Miner",
-            "author": "London",
+            "author": "Jack London",
             "before": {
               "imageUrl": "/images/collections/literary-2/London/pocket miner/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/London/pocket miner/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“If it ain’t the real thing, may God knock off my head with sour apples.”",
+            "quotefrom": "All Gold Canyon",
+            "alt": "Close-up of hands panning for gold in a shallow stream."
           },
           {
             "title": "Spitz",
-            "author": "London",
+            "author": "Jack London",
             "before": {
               "imageUrl": "/images/collections/literary-2/London/spitz/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/London/spitz/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Bitter rage was his, but never blind rage.”",
+            "quotefrom": "The Call of the Wild",
+            "alt": "White dog standing alone in deep snow beneath a pale sky."
           }
         ]
       },
       {
-        "title": "Melville",
+        "title": "Herman Melville",
         "titleCard": "/images/collections/literary-2/Melville/title_card.webp",
         "presets": [
           {
-            "title": "Aladdinspalace",
-            "author": "Melville",
+            "title": "Aladdin's Palace",
+            "author": "Herman Melville",
             "before": {
               "imageUrl": "/images/collections/literary-2/Melville/aladdinspalace/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Melville/aladdinspalace/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“All the mirrors and marbles around me seemed crawling over with lizards.”",
+            "quotefrom": "Redburn",
+            "alt": "Ornate empty bar with crystal chandeliers, shelves of bottles, and dramatic red and amber lighting."
           },
           {
             "title": "Bellipotent",
-            "author": "Melville",
+            "author": "Herman Melville",
             "before": {
               "imageUrl": "/images/collections/literary-2/Melville/bellipotent/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Melville/bellipotent/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“And good bye to you too, old Rights of Man.”",
+            "quotefrom": "Billy Budd",
+            "alt": "Silhouette of a three-masted sailing ship against a fiery orange sunset over the sea."
           },
           {
             "title": "Gingernut",
-            "author": "Melville",
+            "author": "Herman Melville",
             "before": {
               "imageUrl": "/images/collections/literary-2/Melville/gingernut/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Melville/gingernut/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Indeed, to this quick-witted youth the whole noble science of the law was contained in a nut-shell.”",
+            "quotefrom": "Bartleby, the Scrivener",
+            "alt": "Freckled boy in a flat cap, white shirt, and suspenders standing in a crowd."
           },
           {
             "title": "Marnoo",
-            "author": "Melville",
+            "author": "Herman Melville",
             "before": {
               "imageUrl": "/images/collections/literary-2/Melville/marnoo/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Melville/marnoo/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The elegant outline of his figure, together with his\nbeardless cheeks, might have entitled him to the distinction of\nstanding for the statue of the Polynesian Apollo.”",
+            "quotefrom": "Typee",
+            "alt": "Close-up portrait of a person with extensive black facial and neck tattoos against a dark background."
           },
           {
             "title": "Pequod",
-            "author": "Melville",
+            "author": "Herman Melville",
             "before": {
               "imageUrl": "/images/collections/literary-2/Melville/pequod/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Melville/pequod/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“A noble craft, but somehow a most melancholy! All noble things are touched with that.”",
+            "quotefrom": "Moby-Dick",
+            "alt": "Close-up of wet wooden pulleys and black ropes along the side of a ship."
           }
         ]
       },
       {
-        "title": "Wharton",
+        "title": "Edith Wharton",
         "titleCard": "/images/collections/literary-2/Wharton/title_card.webp",
         "presets": [
           {
             "title": "Gryce",
-            "author": "Wharton",
+            "author": "Edith Wharton",
             "before": {
               "imageUrl": "/images/collections/literary-2/Wharton/gryce/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Wharton/gryce/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Like a merchant whose warehouses are crammed with an unmarketable commodity.”",
+            "quotefrom": "The House of Mirth",
+            "alt": "Young man in a formal dark period suit standing in an ornate, warmly lit interior."
           },
           {
             "title": "Mattie",
-            "author": "Wharton",
+            "author": "Edith Wharton",
             "before": {
               "imageUrl": "/images/collections/literary-2/Wharton/mattie/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Wharton/mattie/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“She was quick to learn, but forgetful and dreamy.”",
+            "quotefrom": "Ethan Frome",
+            "alt": "Smiling woman in a pale blouse and flowing pink skirt walking through a sunlit grassy field."
           },
           {
             "title": "Olenska",
-            "author": "Wharton",
+            "author": "Edith Wharton",
             "before": {
               "imageUrl": "/images/collections/literary-2/Wharton/olenska/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Wharton/olenska/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“She came rather late, one hand still ungloved, and fastening a bracelet about her wrist.”",
+            "quotefrom": "The Age of Innocence",
+            "alt": "Woman in a pale lace dress and large feathered hat looking to the side in a softly lit interior."
           },
           {
             "title": "Tintagel",
-            "author": "Wharton",
+            "author": "Edith Wharton",
             "before": {
               "imageUrl": "/images/collections/literary-2/Wharton/tintagel/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Wharton/tintagel/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The long murmur of the past breaking on the shores of a sleeping world.”",
+            "quotefrom": "The Buccaneers",
+            "alt": "Three women in elaborate pale period gowns and hats seated beside a wooded lake with flower baskets."
           },
           {
             "title": "Violet",
-            "author": "Wharton",
+            "author": "Edith Wharton",
             "before": {
               "imageUrl": "/images/collections/literary-2/Wharton/violet/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/literary-2/Wharton/violet/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“A harmless vampire in pearls who sought only to feed on the notoriety which all her millions could not create for her.”",
+            "quotefrom": "The Glimpses of the Moon",
+            "alt": "Elegant woman in a gray fur coat and turban standing beside a green train as a porter carries vintage luggage."
           }
         ]
       }
     ]
   },
   "poets-1": {
-    "title": "Poets 1",
-    "description": "",
-    "menuImage": null,
-    "menuImageAlt": "Poets 1",
+    "title": "Poets Collection I",
+    "description": "A lyrical collection of presets inspired by the imagery, rhythm, and emotional landscapes of Emily Dickinson, William Carlos Williams, Phillis Wheatley, and Walt Whitman.",
+    "menuImage": "/images/collections/poets-1/assets/menu_card.webp",
+    "menuImageAlt": "A menu card representing Poets Collection I.",
     "buttonImage": "/images/collections/poets-1/assets/button.webp",
     "href": "poets/1",
-    "price": null,
+    "price": 55,
     "sets": [
       {
-        "title": "Dickinson",
+        "title": "Emily Dickinson",
         "titleCard": "/images/collections/poets-1/dickinson/title_card.webp",
         "presets": [
           {
             "title": "Amber Hand",
-            "author": "Dickinson",
+            "author": "Emily Dickinson",
             "before": {
               "imageUrl": "/images/collections/poets-1/dickinson/AmberHand/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/dickinson/AmberHand/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“She leads Him – docile as a Boy –along appointed Sands”",
+            "quotefrom": "The Moon Is Distant from the Sea",
+            "alt": "Full moon glowing above the dark silhouettes of bare tree branches."
           },
           {
             "title": "Gossamer",
-            "author": "Dickinson",
+            "author": "Emily Dickinson",
             "before": {
               "imageUrl": "/images/collections/poets-1/dickinson/Gossamer/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/dickinson/Gossamer/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The Carriage held but just Ourselves –and Immortality”",
+            "quotefrom": "Because I Could Not Stop for Death",
+            "alt": "Horse-drawn hearse standing among gravestones in a foggy cemetery."
           },
           {
             "title": "Pompeii",
-            "author": "Dickinson",
+            "author": "Emily Dickinson",
             "before": {
               "imageUrl": "/images/collections/poets-1/dickinson/Pompeii/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/dickinson/Pompeii/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“phlegmatic mountains usually so still”",
+            "quotefrom": "I Have Never Seen Volcanoes",
+            "alt": "Volcano releasing a tall plume of smoke above a green forest and winding river."
           },
           {
             "title": "Stillness",
-            "author": "Dickinson",
+            "author": "Emily Dickinson",
             "before": {
               "imageUrl": "/images/collections/poets-1/dickinson/Stillness/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/dickinson/Stillness/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“And then the Windows failed - and then I could not see to see”",
+            "quotefrom": "I Heard a Fly Buzz When I Died",
+            "alt": "Extreme close-up of a fly resting on a smooth blue surface."
           },
           {
             "title": "Velvet Masonry",
-            "author": "Dickinson",
+            "author": "Emily Dickinson",
             "before": {
               "imageUrl": "/images/collections/poets-1/dickinson/VelvetMasonry/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/dickinson/VelvetMasonry/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Like trains of cars on tracks of plush.”",
+            "quotefrom": "The Bee",
+            "alt": "Close-up of several honeybees crawling across dark, weathered wood."
           }
         ]
       },
       {
-        "title": "Wcw",
+        "title": "William Carlos Williams",
         "titleCard": "/images/collections/poets-1/wcw/title_card.webp",
         "presets": [
           {
-            "title": "Black Winged",
-            "author": "Wcw",
+            "title": "Black-Winged",
+            "author": "William Carlos Williams",
             "before": {
               "imageUrl": "/images/collections/poets-1/wcw/BlackWinged/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wcw/BlackWinged/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Hurl of the waters’ futile might!”",
+            "quotefrom": "An Old Song",
+            "alt": "White gull with black-tipped wings flying against a cloudy blue sky."
           },
           {
             "title": "Glazed",
-            "author": "Wcw",
+            "author": "William Carlos Williams",
             "before": {
               "imageUrl": "/images/collections/poets-1/wcw/Glazed/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wcw/Glazed/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“So much depends upon”",
+            "quotefrom": "The Red Wheelbarrow",
+            "alt": "Black-and-white rooster and hen standing in grass beside a red wheelbarrow."
           },
           {
             "title": "Green Bottle",
-            "author": "Wcw",
+            "author": "William Carlos Williams",
             "before": {
               "imageUrl": "/images/collections/poets-1/wcw/GreenBottle/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wcw/GreenBottle/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The back wings of the hospital where nothing will grow”",
+            "quotefrom": "Between Walls",
+            "alt": "Shattered pieces of green glass scattered across sandy ground."
           },
           {
             "title": "Lonely",
-            "author": "Wcw",
+            "author": "William Carlos Williams",
             "before": {
               "imageUrl": "/images/collections/poets-1/wcw/Lonely/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wcw/Lonely/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Who shall say I am not the happy genius of my household?”",
+            "quotefrom": "Danse Russe",
+            "alt": "Weathered white farmhouse at the end of a muddy road in dense fog."
           },
           {
             "title": "So Sweet",
-            "author": "Wcw",
+            "author": "William Carlos Williams",
             "before": {
               "imageUrl": "/images/collections/poets-1/wcw/SoSweet/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wcw/SoSweet/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Forgive me/they were delicious.”",
+            "quotefrom": "This Is Just to Say",
+            "alt": "Bowl filled with dark purple plums and green leaves beside a sunlit window."
           }
         ]
       },
       {
-        "title": "Wheatley",
+        "title": "Phillis Wheatley",
         "titleCard": "/images/collections/poets-1/wheatley/title_card.webp",
         "presets": [
           {
             "title": "Aurora",
-            "author": "Wheatley",
+            "author": "Phillis Wheatley",
             "before": {
               "imageUrl": "/images/collections/poets-1/wheatley/Aurora/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wheatley/Aurora/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Through all the heav'ns what beauteous dies are spread!”",
+            "quotefrom": "A Hymn to the Evening",
+            "alt": "Green northern lights and stars above snowy mountains and dark water beneath a low moon."
           },
           {
             "title": "Auspicious Queen",
-            "author": "Wheatley",
+            "author": "Phillis Wheatley",
             "before": {
               "imageUrl": "/images/collections/poets-1/wheatley/AuspiciousQueen/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wheatley/AuspiciousQueen/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Arrayed in glory from the orbs above.”",
+            "quotefrom": "On Virtue",
+            "alt": "Close side-profile of a woman beside a window, with her softly lit reflection in the glass."
           },
           {
             "title": "Avis",
-            "author": "Wheatley",
+            "author": "Phillis Wheatley",
             "before": {
               "imageUrl": "/images/collections/poets-1/wheatley/Avis/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wheatley/Avis/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“She feeds on truth and uncreated things.”",
+            "quotefrom": "To a Gentleman and Lady",
+            "alt": "Single pale rose blooming against a dark, softly blurred background."
           },
           {
             "title": "Fancy",
-            "author": "Wheatley",
+            "author": "Phillis Wheatley",
             "before": {
               "imageUrl": "/images/collections/poets-1/wheatley/Fancy/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wheatley/Fancy/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The fields may flourish, and gay scenes arise.”",
+            "quotefrom": "On Imagination",
+            "alt": "Black man in Victorian mourning clothes seated between two young girls in a cemetery."
           },
           {
             "title": "Radiant Hinges",
-            "author": "Wheatley",
+            "author": "Phillis Wheatley",
             "before": {
               "imageUrl": "/images/collections/poets-1/wheatley/RadiantHinges/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/wheatley/RadiantHinges/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“On what seraphic pinions shall we move, and view the landscapes in the realms above?”",
+            "quotefrom": "To S.M.",
+            "alt": "Young Black boy reclining in a sunlit field with a horse-drawn carriage in the distance."
           }
         ]
       },
       {
-        "title": "Whitman",
+        "title": "Walt Whitman",
         "titleCard": "/images/collections/poets-1/whitman/title_card.webp",
         "presets": [
           {
             "title": "Body Electric",
-            "author": "Whitman",
+            "author": "Walt Whitman",
             "before": {
               "imageUrl": "/images/collections/poets-1/whitman/BodyElectric/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/whitman/BodyElectric/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“O I say these are not the parts and poems of the body only, but of the soul.”",
+            "quotefrom": "I Sing the Body Electric",
+            "alt": "Four silhouetted people splashing in shallow ocean water beneath bright sunlight."
           },
           {
             "title": "Filament",
-            "author": "Whitman",
+            "author": "Walt Whitman",
             "before": {
               "imageUrl": "/images/collections/poets-1/whitman/Filament/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/whitman/Filament/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Till the bridge you will need be form’d, till the ductile anchor hold.”",
+            "quotefrom": "A Noiseless Patient Spider",
+            "alt": "Orange-legged spider centered on its web against a dark background."
           },
           {
             "title": "Foray",
-            "author": "Whitman",
+            "author": "Walt Whitman",
             "before": {
               "imageUrl": "/images/collections/poets-1/whitman/Foray/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/whitman/Foray/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Arm'd and fearless—eating, drinking, sleeping, loving,\nNo law less than ourselves owning.”",
+            "quotefrom": "We Two Boys Together Clinging",
+            "alt": "Close-up of two people holding hands while walking side by side."
           },
           {
             "title": "Sprig",
-            "author": "Whitman",
+            "author": "Walt Whitman",
             "before": {
               "imageUrl": "/images/collections/poets-1/whitman/Sprig/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/whitman/Sprig/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“And what shall my perfume be for the grave of him I love?”",
+            "quotefrom": "When Lilacs Last in the Dooryard Bloom’d",
+            "alt": "Cluster of pink hydrangea blossoms growing beside a wooden picket fence."
           },
           {
             "title": "Varied Carols",
-            "author": "Whitman",
+            "author": "Walt Whitman",
             "before": {
               "imageUrl": "/images/collections/poets-1/whitman/VariedCarols/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/poets-1/whitman/VariedCarols/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Each singing what belongs to him or her and to none else.”",
+            "quotefrom": "I Hear America Singing",
+            "alt": "Cropped portrait of a mustached laborer wearing a work shirt and suspenders."
           }
         ]
       }
@@ -925,294 +886,294 @@
   },
   "southern_drunks": {
     "title": "Southern Drunks",
-    "description": "",
-    "menuImage": null,
-    "menuImageAlt": "Southern Drunks",
+    "description": "A richly cinematic collection inspired by the heat, humor, longing, and Gothic atmosphere of Truman Capote, William Faulkner, O. Henry, and Tennessee Williams.",
+    "menuImage": "/images/collections/southern_drunks/assets/menu_card.webp",
+    "menuImageAlt": "A menu card representing the Southern Drunks collection.",
     "buttonImage": "/images/collections/southern_drunks/assets/button.webp",
     "href": "southern-drunks",
-    "price": null,
+    "price": 55,
     "sets": [
       {
-        "title": "Capote",
+        "title": "Truman Capote",
         "titleCard": "/images/collections/southern_drunks/capote/title_card.webp",
         "presets": [
           {
             "title": "Clutter",
-            "author": "Capote",
+            "author": "Truman Capote",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/capote/clutter/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/capote/clutter/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Now, on this final day of her life, Mrs. Clutter hung in the closet the calico housedress she had been wearing.”",
+            "quotefrom": "In Cold Blood",
+            "alt": "Large white farmhouse with a wraparound porch on a broad green lawn beneath billowing clouds."
           },
           {
             "title": "Golightly",
-            "author": "Capote",
+            "author": "Truman Capote",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/capote/golightly/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/capote/golightly/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“For all her chic thinness, she had an almost breakfast-cereal air of health, a soap and lemon cleanness.”",
+            "quotefrom": "Breakfast at Tiffany’s",
+            "alt": "Row of ornate brownstone homes and stoops along a sunlit, tree-lined city street."
           },
           {
             "title": "Skully",
-            "author": "Capote",
+            "author": "Truman Capote",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/capote/skully/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/capote/skully/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The shape of loneliness, greenly iridescent, whitely indefinite, seemed to rise from the garden.”",
+            "quotefrom": "Other Voices, Other Rooms",
+            "alt": "Old two-story house framed by sprawling oak trees draped in Spanish moss."
           },
           {
             "title": "Sook",
-            "author": "Capote",
+            "author": "Truman Capote",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/capote/sook/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/capote/sook/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“We're both quite awed at the prospect of drinking straight whiskey; the taste of it brings screwed-up expressions and sour shudders.”",
+            "quotefrom": "A Christmas Memory",
+            "alt": "Bottle of amber liquor on a rustic wooden floor beside a large wooden barrel."
           },
           {
             "title": "Talbo",
-            "author": "Capote",
+            "author": "Truman Capote",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/capote/talbo/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/capote/talbo/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“She had the eyes of a gifted person, kindled, transparent eyes, luminously green as mint jelly.”",
+            "quotefrom": "The Grass Harp",
+            "alt": "Wooden treehouse with a ladder nestled among sunlit green branches."
           }
         ]
       },
       {
-        "title": "Faulkner",
+        "title": "William Faulkner",
         "titleCard": "/images/collections/southern_drunks/faulkner/title_card.webp",
         "presets": [
           {
             "title": "Addie",
-            "author": "Faulkner",
+            "author": "William Faulkner",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/addie/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/addie/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“I could just remember how my father used to say that the reason for living\nwas to get ready to stay dead a long time.”",
+            "quotefrom": "As I Lay Dying",
+            "alt": "Weathered wooden wagon loaded with logs in an autumn woodland."
           },
           {
             "title": "Hogganbeck",
-            "author": "Faulkner",
+            "author": "William Faulkner",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/hogganbeck/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/hogganbeck/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The motor vehicle was an insolvent phenomenon like last night's toadstool and, like the fungus, would vanish with tomorrow's sun.”",
+            "quotefrom": "The Reivers",
+            "alt": "Dark vintage automobile parked in front of a wooden barn."
           },
           {
             "title": "Homer",
-            "author": "Faulkner",
+            "author": "William Faulkner",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/homer/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/homer/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“A thin, acrid pall as of the tomb seemed to lie everywhere upon this room decked and furnished as for a bridal.”",
+            "quotefrom": "A Rose for Emily",
+            "alt": "Decaying corpse in ornate clothing lying among red roses in a dark setting."
           },
           {
             "title": "Lena",
-            "author": "Faulkner",
+            "author": "William Faulkner",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/lena/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/lena/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“She expels her breath. It is not a sigh so much as a peaceful expiration, as though of peaceful astonishment.”",
+            "quotefrom": "Light in August",
+            "alt": "Red dirt road running between fenced green fields and bare trees beneath a misty sky."
           },
           {
             "title": "Snopes",
-            "author": "Faulkner",
+            "author": "William Faulkner",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/snopes/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/faulkner/snopes/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“His father, still in the hat and coat, at once formal and burlesque as though dressed carefully for some shabby and ceremonial violence.”",
+            "quotefrom": "Barn Burning",
+            "alt": "Wooden barn engulfed in flames at night, sending thick smoke into the sky."
           }
         ]
       },
       {
-        "title": "Henry",
+        "title": "O. Henry",
         "titleCard": "/images/collections/southern_drunks/henry/title_card.webp",
         "presets": [
           {
             "title": "Behrman",
-            "author": "Henry",
+            "author": "O. Henry",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/henry/behrman/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/henry/behrman/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“He had always talked of painting a great picture, a masterpiece, but he had never yet started it.”",
+            "quotefrom": "The Last Leaf",
+            "alt": "Green ivy vines spreading across a cracked and weathered gray wall."
           },
           {
             "title": "Billy Jackson",
-            "author": "Henry",
+            "author": "O. Henry",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/henry/billy jackson/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/henry/billy jackson/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“I know as much as any of them about the style of sleeves they're going to wear next fall in Mars.”",
+            "quotefrom": "The Skylight Room",
+            "alt": "View looking upward through a narrow enclosed courtyard toward a cloudy blue sky."
           },
           {
             "title": "Christmas",
-            "author": "Henry",
+            "author": "O. Henry",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/henry/christmas/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/henry/christmas/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“She stood by the window and looked out dully at a grey cat walking a grey fence in a grey backyard.”",
+            "quotefrom": "The Gift of the Magi",
+            "alt": "Open metal scissors and a vintage pocket watch lying on a worn wooden surface."
           },
           {
             "title": "Hetty",
-            "author": "Henry",
+            "author": "O. Henry",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/henry/hetty/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/henry/hetty/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Homely of countenance, with small, contemptuous, green eyes and chocolate-colored hair.”",
+            "quotefrom": "The Third Ingredient",
+            "alt": "Coiled sausage cooking on a grate beside a black cast-iron pot over an outdoor fire."
           },
           {
             "title": "Johnny",
-            "author": "Henry",
+            "author": "O. Henry",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/henry/johnny/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/henry/johnny/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“He started up a howl like a calliope and fastened himself as tight as a leech to Bill's leg.”",
+            "quotefrom": "The Ransom of Red Chief",
+            "alt": "Young boy in a flat cap and brown suit sorting piles of coins."
           }
         ]
       },
       {
-        "title": "Williams",
+        "title": "Tennessee Williams",
         "titleCard": "/images/collections/southern_drunks/williams/title_card.webp",
         "presets": [
           {
             "title": "Alma",
-            "author": "Williams",
+            "author": "Tennessee Williams",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/williams/alma/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/williams/alma/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“Sometimes, out of necessity, we shadowy people take on a strength of our own. I have that now.”",
+            "quotefrom": "Summer and Smoke",
+            "alt": "Woman in an ornate white lace period dress standing in a brightly lit doorway."
           },
           {
-            "title": "Cabeza De Lobo",
-            "author": "Williams",
+            "title": "Cabeza de Lobo",
+            "author": "Tennessee Williams",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/williams/cabeza de lobo/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/williams/cabeza de lobo/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“The steep white street in the sun that was like a great white bone of a giant beast that had caught on fire in the sky.”",
+            "quotefrom": "Suddenly Last Summer",
+            "alt": "Towering golden stone castle viewed from below against a vivid blue sky."
           },
           {
             "title": "Dubois",
-            "author": "Williams",
+            "author": "Tennessee Williams",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/williams/dubois/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/williams/dubois/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“It brought me here. Where I'm not wanted and where I'm ashamed to be.”",
+            "quotefrom": "A Streetcar Named Desire",
+            "alt": "St. Charles streetcar approaching along wet tracks beneath a canopy of trees."
           },
           {
             "title": "Mendacity",
-            "author": "Williams",
+            "author": "Tennessee Williams",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/williams/mendacity/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/williams/mendacity/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“I have just now returned from the other side of the moon, death's country, son, and I'm not easy to shock by anything here.”",
+            "quotefrom": "Cat on a Hot Tin Roof",
+            "alt": "Two-story white plantation-style house framed by oak branches draped in Spanish moss."
           },
           {
             "title": "Nightingale",
-            "author": "Williams",
+            "author": "Tennessee Williams",
             "before": {
               "imageUrl": "/images/collections/southern_drunks/williams/nightingale/before.webp"
             },
             "after": {
               "imageUrl": "/images/collections/southern_drunks/williams/nightingale/after.webp"
             },
-            "quote": "",
-            "quotefrom": "",
-            "alt": ""
+            "quote": "“I don’t receive apparitions. They’re only seen by the mad.”",
+            "quotefrom": "Vieux Carré",
+            "alt": "Empty street lined with colorful historic brick buildings, balconies, and black gas lamps."
           }
         ]
       }

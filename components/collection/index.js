@@ -1,9 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ReactCompareSlider } from "react-compare-slider";
 import SliderHandle from "../slider-handle";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
 import BlurredSliderImage from "../blurred-slider-image";
-import Image from "next/image";
 import BlurredImage from "../blurred-image";
 
 export default function Collection({ title, titleCard, assets }) {
@@ -73,24 +71,20 @@ export default function Collection({ title, titleCard, assets }) {
                       onlyHandleDraggable
                       className="w-full min-h-[400px] image-container" // ✅ Force a minimum height
                       itemOne={
-                        <LazyLoadComponent>
-                          <div className="w-full aspect-[3/2] flex items-center justify-center">
-                            <BlurredSliderImage
-                              src={img.before.imageUrl}
-                              alt={img.alt}
-                            />
-                          </div>
-                        </LazyLoadComponent>
+                        <div className="w-full aspect-[3/2] flex items-center justify-center">
+                          <BlurredSliderImage
+                            src={img.before.imageUrl}
+                            alt={img.alt}
+                          />
+                        </div>
                       }
                       itemTwo={
-                        <LazyLoadComponent>
-                          <div className="w-full aspect-[3/2] flex items-center justify-center">
-                            <BlurredSliderImage
-                              src={img.after.imageUrl}
-                              alt={img.alt}
-                            />
-                          </div>
-                        </LazyLoadComponent>
+                        <div className="w-full aspect-[3/2] flex items-center justify-center">
+                          <BlurredSliderImage
+                            src={img.after.imageUrl}
+                            alt={img.alt}
+                          />
+                        </div>
                       }
                     />
                   </div>
@@ -102,7 +96,9 @@ export default function Collection({ title, titleCard, assets }) {
                   </div>
                 )}
               </div>
-              <h3 className="french-news self-start mt-3">{img.quote}</h3>
+              <h3 className="french-news self-start mt-3 whitespace-pre-line">
+                {img.quote}
+              </h3>
               <h3 className="french-news self-start"> - {img.quotefrom}</h3>
             </div>
           </div>

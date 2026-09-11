@@ -77,7 +77,10 @@ export function generateProducts() {
   for (const collectionFolder of directoriesIn(IMAGE_ROOT)) {
     const collectionImageDir = path.join(IMAGE_ROOT, collectionFolder);
     const assetsDir = path.join(collectionImageDir, "assets");
-    const menuImageFile = findFile(assetsDir, ["menu-card.webp"]);
+    const menuImageFile = findFile(assetsDir, [
+      "menu-card.webp",
+      "menu_card.webp",
+    ]);
     const buttonImageFile = findFile(assetsDir, ["button.webp"]);
     const collectionName = displayName([collectionFolder], collectionFolder);
     const sets = [];
