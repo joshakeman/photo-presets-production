@@ -1,11 +1,16 @@
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import Script from "next/script";
 import { useCart } from "../../context/CartContext";
 import Layout from "../../components/layout";
 import CheckoutButton from "../../components/checkout-button";
 import PayPalCheckout from "../../components/paypalCheckout";
-import Script from "next/script";
+import PortmanteauCount from "../../components/portmanteau-count";
+import Star from "../../public/images/assets/starette.webp";
 
 export default function CartPage() {
-  const { cart, removeFromCart } = useCart();
+  const { cart, removeFromCart, cartReady } = useCart();
 
   const total = cart.reduce((sum, item) => {
     const quantity = item.quantity || 1;
@@ -13,69 +18,132 @@ export default function CartPage() {
   }, 0);
 
   return (
-    <Layout
-      backgroundColor={"bg-backgroundBlueFaded"}
-      backgroundImage={"bg-victorianPattern"}
-    >
-      <div className="container mx-auto p-6">
-        {/* PayPal SDK */}
+    <>
+      <Head>
+        <title>Portmanteau | Photo Presets</title>
+        <meta
+          name="description"
+          content="Review the Photo Presets collections in your portmanteau and proceed to checkout."
+        />
+      </Head>
+
+      <Layout
+        backgroundColor="bg-backgroundBlueFaded"
+        backgroundImage="bg-victorianPattern"
+      >
         <Script
-          src={`https://www.paypal.com/sdk/js?client-id=Aa-JflnT6zEjRKCnrWcyNbwuqd0rl_0NgbolCseecbNYLnokjqGwmku6glsApmHrngqtWVyoXDxJE7w1&currency=USD&disable-funding=card`}
+          src="https://www.paypal.com/sdk/js?client-id=Aa-JflnT6zEjRKCnrWcyNbwuqd0rl_0NgbolCseecbNYLnokjqGwmku6glsApmHrngqtWVyoXDxJE7w1&currency=USD&disable-funding=card"
           strategy="afterInteractive"
         />
 
-        <h2 className="text-2xl font-bold mb-6">Your Cart</h2>
+        <main className="mx-auto mt-24 w-full max-w-3xl pb-16 sm:mt-28">
+          {/* <h1 className="french-news mb-5 text-center text-5xl text-black sm:text-7xl">
+            Portmanteau
+          </h1> */}
 
-        {cart.length === 0 ? (
-          <p>Your cart is empty.</p>
-        ) : (
-          <>
-            <ul className="divide-y divide-gray-200 mb-6">
-              {cart.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex justify-between items-center py-4"
+          <section className="min-h-[70vh] rounded-[2.5rem] border-2 border-accent bg-darkCard px-5 py-8 text-white shadow-cool-shadow sm:px-12 sm:py-12">
+            <div className="mb-8 flex items-center justify-center gap-4 sm:gap-8">
+              <Image src={Star} alt="" className="h-auto w-9 sm:w-12" />
+              <PortmanteauCount
+                count={cartReady ? cart.length : 0}
+                className="w-32 sm:w-44"
+                priority
+              />
+              <Image src={Star} alt="" className="h-auto w-9 sm:w-12" />
+            </div>
+
+            {!cartReady ? (
+              <p className="french-news py-12 text-center text-2xl text-accent">
+                Opening your portmanteau…
+              </p>
+            ) : cart.length === 0 ? (
+              <div className="flex flex-col items-center py-8 text-center sm:py-14">
+                <p className="french-news mb-8 text-2xl sm:text-3xl">
+                  Your portmanteau is empty.
+                </p>
+                <Link
+                  href="/#collections"
+                  className="menu-btn-lg bourbonbase letterpress-button px-6 py-3 text-xl text-accent sm:text-2xl"
                 >
-                  <div>
-                    <span className="font-medium">{item.name}</span>
-                    <span className="ml-2 text-gray-600">
-                      ${item.price.toFixed(2)}
-                    </span>
+                  Explore the Gallery
+                </Link>
+              </div>
+            ) : (
+              <>
+                <ul
+                  className="mx-auto max-w-xl space-y-5"
+                  aria-label="Collections in your portmanteau"
+                >
+                  {cart.map((item, index) => (
+                    <li
+                      key={item.href || item.id || item.title || item.name}
+                      className="grid grid-cols-[7rem_1fr_auto] items-center gap-3 border-b border-accent/40 pb-5 sm:grid-cols-[10rem_1fr_auto] sm:gap-6"
+                    >
+                      <div className="flex items-center justify-center">
+                        {item.menuImage ? (
+                          <img
+                            src={item.menuImage}
+                            alt={item.menuImageAlt || `${item.name || item.title} preview`}
+                            className="aspect-square w-full rounded-lg object-cover"
+                          />
+                        ) : (
+                          <Image src={Star} alt="" className="h-auto w-10" />
+                        )}
+                      </div>
+
+                      <div className="min-w-0">
+                        <p className="french-news text-xl text-accent sm:text-2xl">
+                          {item.name || item.title}
+                        </p>
+                        {item.sets?.length > 0 && (
+                          <p className="french-news mt-1 text-sm leading-snug text-white/80 sm:text-base">
+                            {item.sets.map((set) => set.title).join(" · ")}
+                          </p>
+                        )}
+                        <button
+                          type="button"
+                          onClick={() => removeFromCart(index)}
+                          className="mt-1 text-sm text-white/70 underline-offset-4 hover:text-white hover:underline"
+                          aria-label={`Remove ${item.name || item.title} from portmanteau`}
+                        >
+                          Remove
+                        </button>
+                      </div>
+
+                      <span className="french-news text-xl text-accent sm:text-2xl">
+                        ${item.price.toFixed(2)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mx-auto mt-8 max-w-xl border-t-2 border-accent pt-5">
+                  <p className="french-news text-right text-4xl text-accent sm:text-5xl">
+                    Total ${total.toFixed(2)}
+                  </p>
+
+                  <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                    <Link
+                      href="/#collections"
+                      className="menu-btn-lg bourbonbase letterpress-button flex items-center justify-center px-4 py-3 text-center text-lg text-accent sm:text-xl"
+                    >
+                      Keep Exploring
+                    </Link>
+                    <CheckoutButton cartItems={cart} />
                   </div>
-                  <button
-                    onClick={() => removeFromCart(index)}
-                    className="text-sm text-red-600 hover:underline"
-                  >
-                    Remove
-                  </button>
-                </li>
-              ))}
-            </ul>
 
-            <h3 className="text-xl font-semibold mt-6">
-              Total: ${total.toFixed(2)}
-            </h3>
-
-            {/* Stripe Checkout */}
-            <div className="mt-6">
-              <h4 className="text-lg font-medium mb-2">Pay with Card</h4>
-              <p className="text-sm text-gray-600 mb-2">
-                Secure checkout powered by Stripe
-              </p>
-              <CheckoutButton cartItems={cart} />
-            </div>
-
-            {/* PayPal Checkout */}
-            <div className="mt-8 border-t pt-6">
-              <h4 className="text-lg font-medium mb-2">Or pay with PayPal</h4>
-              <p className="text-sm text-gray-600 mb-2">
-                You can also pay using your PayPal account
-              </p>
-              <PayPalCheckout amount={total} />
-            </div>
-          </>
-        )}
-      </div>
-    </Layout>
+                  <div className="mt-8 border-t border-accent/40 pt-6">
+                    <p className="french-news mb-4 text-center text-lg text-white/80">
+                      Or check out with PayPal
+                    </p>
+                    <PayPalCheckout amount={total} />
+                  </div>
+                </div>
+              </>
+            )}
+          </section>
+        </main>
+      </Layout>
+    </>
   );
 }

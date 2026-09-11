@@ -1,6 +1,6 @@
 import React from "react";
 import Collection from "../../../../components/collection/index.js";
-import { useCart } from "../../../../hooks/useCart.js";
+import { useCart } from "../../../../context/CartContext.js";
 import { products } from "../../../../lib/products.js";
 import Layout from "../../../../components/layout/index.js";
 import lit1Icon from "../../../../public/images/literarycollection-i-button.png";
@@ -9,7 +9,9 @@ import BlurredImage from "../../../../components/blurred-image/index.js";
 import Head from "next/head";
 
 export default function index() {
-  const { addToCart } = useCart();
+  const { addToCart, isInCart, cartReady } = useCart();
+  const product = products["literary-1"];
+  const isAdded = isInCart(product);
 
   return (
     <>
@@ -66,19 +68,22 @@ export default function index() {
         <button
           className="menu-btn-lg-gold bourbonbase text-base md:text-2xl lg:text-3xl w-auto whitespace-nowrap min-w-[120px] block mx-auto letterpress-button pt-2 pb-2 pl-4 pr-4"
           onClick={() =>
-            addToCart({
-              name: "Literary Collection",
-              price: 55.0,
-              quantity: 1,
-            })
+            addToCart(product)
           }
+          disabled={!cartReady || isAdded}
           aria-label="Add Literary Collection to cart"
         >
-          <span className="whitespace-nowrap">Add to cart - </span>
-          <span className="whitespace-nowrap">
-            <span className="french-news text-base">$</span>
-            <span className="bourbonbase"> 12</span>
-          </span>
+          {isAdded ? (
+            <span className="whitespace-nowrap">In Portmanteau</span>
+          ) : (
+            <>
+              <span className="whitespace-nowrap">Add to Portmanteau - </span>
+              <span className="whitespace-nowrap">
+                <span className="french-news text-base">$</span>
+                <span className="bourbonbase"> {product.price}</span>
+              </span>
+            </>
+          )}
         </button>
         <h2 className="french-news text-center text-2xl mt-4 mb-8">
           <span className="whitespace-nowrap"> Jane Austen</span> |

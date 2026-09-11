@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { useAuth } from "./authContext"; // adjust the path if needed
+import { useAuth } from "./authContext";
 
 const CartContext = createContext();
 
@@ -7,25 +7,50 @@ export function CartProvider({ children }) {
   const { user } = useAuth();
   const [cart, setCart] = useState([]);
 
-  // Determine key based on login status
   const cartKey = user ? `cart-${user.id}` : "cart-guest";
-
-  const [cartReady, setCartReady] = useState(false); // ✅ New flag
+  const [loadedCartKey, setLoadedCartKey] = useState(null);
+  const cartReady = loadedCartKey === cartKey;
 
   // Load cart from localStorage when user changes
   useEffect(() => {
-    const savedCart = JSON.parse(localStorage.getItem(cartKey)) || [];
-    setCart(savedCart);
-    setCartReady(true); // ✅ Set ready after loading
+    setLoadedCartKey(null);
+
+    try {
+      const savedCart = JSON.parse(localStorage.getItem(cartKey)) || [];
+      setCart(Array.isArray(savedCart) ? savedCart : []);
+    } catch {
+      setCart([]);
+    }
+
+    setLoadedCartKey(cartKey);
   }, [cartKey]);
 
   // Save cart to localStorage when it changes
   useEffect(() => {
+    if (!cartReady) return;
     localStorage.setItem(cartKey, JSON.stringify(cart));
-  }, [cart, cartKey]);
+  }, [cart, cartKey, cartReady]);
+
+  const itemKey = (item) => item.id || item.href || item.slug || item.title || item.name;
+
+  const isInCart = (item) => {
+    const key = itemKey(item);
+    return Boolean(key) && cart.some((cartItem) => itemKey(cartItem) === key);
+  };
 
   const addToCart = (item) => {
-    setCart((prevCart) => [...prevCart, item]);
+    const key = itemKey(item);
+    if (!key || isInCart(item)) return false;
+
+    setCart((prevCart) => [
+      ...prevCart,
+      {
+        ...item,
+        name: item.name || item.title,
+        quantity: 1,
+      },
+    ]);
+    return true;
   };
 
   const removeFromCart = (index) => {
@@ -38,7 +63,15 @@ export function CartProvider({ children }) {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, clearCart, user, cartReady }}
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        clearCart,
+        isInCart,
+        user,
+        cartReady,
+      }}
     >
       {children}
     </CartContext.Provider>

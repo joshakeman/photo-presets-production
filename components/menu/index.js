@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { useCart } from "../../context/CartContext";
+import PortmanteauCount from "../portmanteau-count";
 import MenuButton from "../../public/images/assets/menu.webp";
 import Portmanteau from "../../public/images/assets/portmanteau.webp";
 import Hat from "../../public/images/assets/hat.png";
@@ -22,6 +24,7 @@ const menuItems = [
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
   const reduceMotion = useReducedMotion();
+  const { cart, cartReady } = useCart();
 
   useEffect(() => {
     if (!isOpen) return;
@@ -57,8 +60,15 @@ export default function Menu() {
           <Image className="h-auto w-full" src={MenuButton} alt="" priority />
         </button>
 
-        <Link href="/cart" className="w-[15%] max-w-44" aria-label="View portmanteau">
-          <Image className="h-auto w-full" src={Portmanteau} alt="" priority />
+        <Link href="/cart" className="relative w-[15%] max-w-44" aria-label={`View portmanteau${cartReady && cart.length ? `, ${cart.length} item${cart.length === 1 ? "" : "s"}` : ""}`}>
+          <motion.span
+            key={cart.length}
+            initial={{ scale: 0.92 }}
+            animate={{ scale: 1 }}
+            className="block"
+          >
+            <PortmanteauCount count={cartReady ? cart.length : 0} priority />
+          </motion.span>
         </Link>
       </nav>
 

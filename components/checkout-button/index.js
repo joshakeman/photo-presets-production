@@ -31,10 +31,10 @@ function CheckoutButton({ cartItems }) {
   return (
     <button
       onClick={handleCheckout}
-      className="bg-accent border-2 border-black py-2 px-6 w-full bourbonbase text-base md:text-lg lg:text-xl whitespace-nowrap"
+      className="menu-btn-lg bourbonbase letterpress-button w-full whitespace-nowrap px-4 py-3 text-lg text-accent sm:text-xl"
       aria-label="Proceed to checkout"
     >
-      Checkout
+      Check-Out Now
     </button>
   );
 }
