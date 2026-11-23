@@ -14,12 +14,25 @@ import {
 const AuthContext = createContext();
 const AUTH_HASH_PATTERN =
   /^#(confirmation_token|recovery_token|invite_token|email_change_token|access_token)=/;
+const DEV_AUTH_BYPASS_ENABLED =
+  process.env.NODE_ENV === "development" &&
+  process.env.NEXT_PUBLIC_DEV_AUTH_BYPASS === "true";
+const DEV_USER = {
+  id: "local-preview-user",
+  email: "local-preview@photopresets.test",
+};
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [authReady, setAuthReady] = useState(false);
 
   useEffect(() => {
+    if (DEV_AUTH_BYPASS_ENABLED) {
+      setUser(DEV_USER);
+      setAuthReady(true);
+      return undefined;
+    }
+
     let active = true;
     const unsubscribe = onAuthChange((_event, nextUser) => {
       if (active) setUser(nextUser);

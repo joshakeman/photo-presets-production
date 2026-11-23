@@ -32,11 +32,10 @@ export default function Collection({ title, titleCard, assets }) {
     return () => observer.disconnect();
   }, []);
 
-  console.log("Collection component rendered with assets:", titleCard);
   return (
     <div
       ref={ref}
-      className="container mx-auto my-4 p-4 flex flex-col justify-center items-center shadow-cool-shadow bg-repeat bg-blend-soft-light bg-darkCard max-w-3xl min-w-[490px] rounded-5xl text-white"
+      className="container mx-auto my-4 flex w-full max-w-3xl flex-col items-center justify-center rounded-[2.25rem] border-2 border-accent bg-darkCard p-3 text-white shadow-cool-shadow sm:rounded-5xl sm:p-4"
     >
       {titleCard ? (
         <BlurredImage
@@ -53,9 +52,9 @@ export default function Collection({ title, titleCard, assets }) {
         </div>
       )}
       <div className="container mx-auto p-4 flex flex-col justify-center items-center">
-        {assets.slice(1).map((img, index) => (
+        {assets.map((img) => (
           <div
-            key={index}
+            key={img.title}
             className="w-[90%] max-w-3xl flex flex-col flex-grow items-center"
           >
             <div className="max-w-3xl min-h-[450px] flex flex-col justify-center items-center self-center mt-6 mb-6">

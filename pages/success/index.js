@@ -28,8 +28,8 @@ export default function CheckoutSuccessPage() {
             Your checkout is complete. Your purchased presets will be available through your account.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <Link href="/orders" className="menu-btn-lg bourbonbase letterpress-button px-6 py-3 text-xl text-accent">
-              View Account
+            <Link href="/downloads" className="menu-btn-lg bourbonbase letterpress-button px-6 py-3 text-xl text-accent">
+              Open Your Library
             </Link>
             <Link href="/#collections" className="menu-btn-lg bourbonbase letterpress-button px-6 py-3 text-xl text-accent">
               Keep Exploring

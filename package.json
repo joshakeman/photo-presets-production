@@ -9,6 +9,7 @@
     "dropbox:authorize": "node scripts/authorizeDropbox.js"
   },
   "dependencies": {
+    "@netlify/blobs": "^11.1.10",
     "@netlify/identity": "^2.0.0",
     "@stripe/stripe-js": "^5.5.0",
     "axios": "^1.7.9",

@@ -11,6 +11,7 @@ import Star from "../../public/images/assets/starette.webp";
 
 export default function CartPage() {
   const { cart, removeFromCart, cartReady } = useCart();
+  const paypalClientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
 
   const total = cart.reduce((sum, item) => {
     const quantity = item.quantity || 1;
@@ -31,10 +32,12 @@ export default function CartPage() {
         backgroundColor="bg-backgroundBlueFaded"
         backgroundImage="bg-victorianPattern"
       >
-        <Script
-          src="https://www.paypal.com/sdk/js?client-id=Aa-JflnT6zEjRKCnrWcyNbwuqd0rl_0NgbolCseecbNYLnokjqGwmku6glsApmHrngqtWVyoXDxJE7w1&currency=USD&disable-funding=card"
-          strategy="afterInteractive"
-        />
+        {paypalClientId && (
+          <Script
+            src={`https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(paypalClientId)}&currency=USD&intent=capture&disable-funding=card`}
+            strategy="afterInteractive"
+          />
+        )}
 
         <main className="mx-auto mt-24 w-full max-w-3xl pb-16 sm:mt-28">
           {/* <h1 className="french-news mb-5 text-center text-5xl text-black sm:text-7xl">
@@ -136,7 +139,13 @@ export default function CartPage() {
                     <p className="french-news mb-4 text-center text-lg text-white/80">
                       Or check out with PayPal
                     </p>
-                    <PayPalCheckout amount={total} />
+                    {paypalClientId ? (
+                      <PayPalCheckout cartItems={cart} />
+                    ) : (
+                      <p className="french-news text-center text-base text-white/60">
+                        PayPal checkout is being prepared.
+                      </p>
+                    )}
                   </div>
                 </div>
               </>
