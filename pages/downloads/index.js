@@ -42,22 +42,12 @@ function CollectionCard({ collection }) {
           {presetCount} presets in {collection.sets.length} volumes
         </p>
         <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row">
-          {collection.downloadUrl ? (
-            <a
-              href={collection.downloadUrl}
-              className="menu-btn-lg bourbonbase letterpress-button inline-flex min-h-12 items-center justify-center px-6 py-3 text-xl text-accent"
-              download
-            >
-              Download Collection
-            </a>
-          ) : (
-            <span
-              className="menu-btn-lg bourbonbase letterpress-button inline-flex min-h-12 cursor-not-allowed items-center justify-center px-6 py-3 text-xl text-accent/60 opacity-70"
-              title="The downloadable archive has not been added yet"
-            >
-              Files Being Prepared
-            </span>
-          )}
+          <a
+            href={`/api/download/${encodeURIComponent(collection.id)}`}
+            className="menu-btn-lg bourbonbase letterpress-button inline-flex min-h-12 items-center justify-center px-6 py-3 text-xl text-accent"
+          >
+            Download Collection
+          </a>
           <Link
             href="/manual"
             className="french-news text-lg text-accent underline decoration-1 underline-offset-4 hover:text-white"
