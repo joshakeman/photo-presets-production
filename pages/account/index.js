@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useAuth } from "../../context/authContext";
 import Hat from "../../public/images/assets/hat.png";
+import Letter from "../../public/images/assets/letter.webp";
 import Star from "../../public/images/assets/starette.webp";
 import Logo from "../../public/images/hero-image/logo-no-background.png";
 
@@ -13,6 +14,14 @@ const inputClass =
 
 const labelClass =
   "french-news mb-2 block text-base uppercase tracking-[0.12em] text-accent sm:text-lg";
+
+function safeReturnTo(value, fallback = "/account") {
+  return typeof value === "string" &&
+    value.startsWith("/") &&
+    !value.startsWith("//")
+    ? value
+    : fallback;
+}
 
 export default function AccountPage() {
   const router = useRouter();
@@ -54,7 +63,7 @@ export default function AccountPage() {
   };
 
   const finishLogin = async () => {
-    const returnTo = typeof router.query.returnTo === "string" ? router.query.returnTo : "/account";
+    const returnTo = safeReturnTo(router.query.returnTo);
     await router.push(returnTo);
   };
 
@@ -74,11 +83,20 @@ export default function AccountPage() {
         await login(email, password);
         await finishLogin();
       } else if (mode === "register") {
+        const returnTo = safeReturnTo(router.query.returnTo, "");
+        if (returnTo) {
+          window.localStorage.setItem(
+            "photo-presets-auth-return-to",
+            returnTo,
+          );
+        }
         const newUser = await signup(email, password);
         if (newUser?.confirmedAt) {
           await finishLogin();
         } else {
-          setMessage("Check your email for a confirmation link, then return here to log in.");
+          setPassword("");
+          setConfirmPassword("");
+          setMode("confirm-email");
         }
       } else if (mode === "forgot") {
         await sendPasswordRecovery(email);
@@ -106,6 +124,7 @@ export default function AccountPage() {
     forgot: "Reset Password",
     recovery: "Choose New Password",
     invite: "Create Your Password",
+    "confirm-email": "Check Your E-mail",
   }[mode];
 
   return (
@@ -151,6 +170,53 @@ export default function AccountPage() {
                   </Link>
                   <button type="button" onClick={logout} className="menu-btn-lg bourbonbase letterpress-button px-6 py-3 text-xl text-accent">
                     Log Out
+                  </button>
+                </div>
+              </div>
+            ) : mode === "confirm-email" ? (
+              <div className="mx-auto max-w-xl text-center">
+                <Image
+                  src={Letter}
+                  alt="A letter carrying your account confirmation"
+                  className="mx-auto h-auto w-40 sm:w-52"
+                />
+                <h2 className="bourbonbase mt-5 text-4xl leading-tight text-accent sm:text-5xl">
+                  One More Step
+                </h2>
+                <p className="french-news mt-5 text-2xl leading-relaxed text-white sm:text-3xl">
+                  We sent a confirmation letter to
+                </p>
+                <p className="french-news mt-2 break-words text-xl text-accent sm:text-2xl">
+                  {email}
+                </p>
+
+                <ol className="french-news mx-auto mt-7 max-w-md space-y-3 text-left text-lg leading-relaxed text-white/85 sm:text-xl">
+                  <li><strong className="text-accent">1.</strong> Open the message from Photo Presets.</li>
+                  <li><strong className="text-accent">2.</strong> Click the confirmation link inside.</li>
+                  <li><strong className="text-accent">3.</strong> We’ll finish opening your account and bring you back.</li>
+                </ol>
+
+                <p className="french-news mt-7 text-base leading-relaxed text-white/65 sm:text-lg">
+                  The letter may take a minute or two to arrive. If it seems to have wandered astray, check your spam or junk folder.
+                </p>
+
+                <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                  <button
+                    type="button"
+                    onClick={() => changeMode("login")}
+                    className="menu-btn-lg bourbonbase letterpress-button px-7 py-3 text-xl text-accent"
+                  >
+                    Return to Log In
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setEmail("");
+                      changeMode("register");
+                    }}
+                    className="french-news text-lg text-accent underline decoration-1 underline-offset-4 hover:text-white"
+                  >
+                    That e-mail is incorrect
                   </button>
                 </div>
               </div>

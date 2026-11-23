@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
+import { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import Layout from "../../components/layout";
 import CheckoutButton from "../../components/checkout-button";
@@ -12,6 +13,8 @@ import Star from "../../public/images/assets/starette.webp";
 export default function CartPage() {
   const { cart, removeFromCart, cartReady } = useCart();
   const paypalClientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
+  const [paypalSdkReady, setPaypalSdkReady] = useState(false);
+  const [paypalSdkError, setPaypalSdkError] = useState(false);
 
   const total = cart.reduce((sum, item) => {
     const quantity = item.quantity || 1;
@@ -34,8 +37,21 @@ export default function CartPage() {
       >
         {paypalClientId && (
           <Script
+            id="paypal-checkout-sdk"
             src={`https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(paypalClientId)}&currency=USD&intent=capture&disable-funding=card`}
             strategy="afterInteractive"
+            onLoad={() => {
+              setPaypalSdkReady(true);
+              setPaypalSdkError(false);
+            }}
+            onReady={() => {
+              setPaypalSdkReady(true);
+              setPaypalSdkError(false);
+            }}
+            onError={() => {
+              setPaypalSdkReady(false);
+              setPaypalSdkError(true);
+            }}
           />
         )}
 
@@ -80,9 +96,9 @@ export default function CartPage() {
                   {cart.map((item, index) => (
                     <li
                       key={item.href || item.id || item.title || item.name}
-                      className="grid grid-cols-[7rem_1fr_auto] items-center gap-3 border-b border-accent/40 pb-5 sm:grid-cols-[10rem_1fr_auto] sm:gap-6"
+                      className="grid grid-cols-[5.5rem_1fr] items-start gap-x-4 gap-y-2 border-b border-accent/40 pb-5 sm:grid-cols-[10rem_1fr_auto] sm:items-center sm:gap-6"
                     >
-                      <div className="flex items-center justify-center">
+                      <div className="row-span-2 flex items-center justify-center sm:row-span-1">
                         {item.menuImage ? (
                           <img
                             src={item.menuImage}
@@ -95,11 +111,11 @@ export default function CartPage() {
                       </div>
 
                       <div className="min-w-0">
-                        <p className="french-news text-xl text-accent sm:text-2xl">
+                        <p className="french-news text-lg leading-tight text-accent sm:text-2xl">
                           {item.name || item.title}
                         </p>
                         {item.sets?.length > 0 && (
-                          <p className="french-news mt-1 text-sm leading-snug text-white/80 sm:text-base">
+                          <p className="french-news mt-1 text-xs leading-snug text-white/80 sm:text-base">
                             {item.sets.map((set) => set.title).join(" · ")}
                           </p>
                         )}
@@ -113,7 +129,7 @@ export default function CartPage() {
                         </button>
                       </div>
 
-                      <span className="french-news text-xl text-accent sm:text-2xl">
+                      <span className="french-news col-start-2 row-start-2 self-end text-lg text-accent sm:col-auto sm:row-auto sm:self-center sm:text-2xl">
                         ${item.price.toFixed(2)}
                       </span>
                     </li>
@@ -140,7 +156,11 @@ export default function CartPage() {
                       Or check out with PayPal
                     </p>
                     {paypalClientId ? (
-                      <PayPalCheckout cartItems={cart} />
+                      <PayPalCheckout
+                        cartItems={cart}
+                        sdkReady={paypalSdkReady}
+                        sdkError={paypalSdkError}
+                      />
                     ) : (
                       <p className="french-news text-center text-base text-white/60">
                         PayPal checkout is being prepared.

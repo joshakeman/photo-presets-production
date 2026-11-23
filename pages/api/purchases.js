@@ -7,12 +7,13 @@ async function importStripeHistory(user) {
   if (!process.env.STRIPE_SECRET_KEY) return [];
 
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-  const sessions = await stripe.checkout.sessions.search({
-    query: `metadata['user_id']:'${user.id.replaceAll("'", "")}'`,
+  const { data: sessions } = await stripe.checkout.sessions.list({
     limit: 100,
   });
-  const paidSessions = sessions.data.filter(
-    (session) => session.payment_status === "paid",
+  const paidSessions = sessions.filter(
+    (session) =>
+      session.payment_status === "paid" &&
+      session.metadata?.user_id === user.id,
   );
 
   await Promise.all(

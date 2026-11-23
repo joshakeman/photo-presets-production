@@ -2,18 +2,21 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import { useAuth } from "../../context/authContext";
 
-export default function PayPalCheckout({ cartItems }) {
+export default function PayPalCheckout({ cartItems, sdkReady, sdkError }) {
   const router = useRouter();
   const { user, authReady } = useAuth();
   const containerRef = useRef(null);
   const [error, setError] = useState("");
 
   useEffect(() => {
-    if (!window.paypal || !containerRef.current || !authReady || !user) return;
+    if (!sdkReady || !containerRef.current || !authReady || !user) return;
+    if (!window.paypal) {
+      setError("PayPal did not finish loading. Please refresh the page or use card checkout.");
+      return;
+    }
     containerRef.current.innerHTML = "";
 
-    const buttons = window.paypal
-        .Buttons({
+    const buttons = window.paypal.Buttons({
           createOrder: async () => {
             setError("");
             const response = await fetch("/api/paypal/create-order", {
@@ -43,16 +46,43 @@ export default function PayPalCheckout({ cartItems }) {
             console.error("PayPal checkout error:", checkoutError);
             setError(checkoutError?.message || "PayPal checkout could not be completed.");
           },
-        })
-        .render(containerRef.current);
+        });
+
+    buttons.render(containerRef.current).catch((renderError) => {
+      console.error("PayPal button render error:", renderError);
+      setError(
+        renderError?.message ||
+          "PayPal checkout could not be displayed. Please refresh or use card checkout.",
+      );
+    });
 
     return () => {
       buttons?.close?.();
     };
-  }, [authReady, user, cartItems, router]);
+  }, [authReady, user, cartItems, router, sdkReady]);
 
   if (!user) {
-    return <p className="french-news text-center text-base text-white/75">Log in to use PayPal.</p>;
+    return (
+      <p className="french-news text-center text-base text-white/75">
+        Log in to continue with PayPal.
+      </p>
+    );
+  }
+
+  if (sdkError) {
+    return (
+      <p className="french-news text-center text-base text-red-300" role="alert">
+        PayPal could not be loaded. Please refresh the page or use card checkout.
+      </p>
+    );
+  }
+
+  if (!sdkReady) {
+    return (
+      <p className="french-news text-center text-base text-white/70" role="status">
+        Summoning PayPal…
+      </p>
+    );
   }
 
   return (

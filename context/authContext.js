@@ -54,7 +54,16 @@ export function AuthProvider({ children }) {
             );
             return;
           }
-          window.location.replace("/account?confirmed=1");
+          const storedReturnTo = window.localStorage.getItem(
+            "photo-presets-auth-return-to",
+          );
+          window.localStorage.removeItem("photo-presets-auth-return-to");
+          const returnTo =
+            storedReturnTo?.startsWith("/") &&
+            !storedReturnTo.startsWith("//")
+              ? storedReturnTo
+              : "/account?confirmed=1";
+          window.location.replace(returnTo);
           return;
         }
 
