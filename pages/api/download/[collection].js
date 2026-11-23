@@ -1,6 +1,7 @@
 import { getUser } from "@netlify/identity";
 import products from "../../../lib/products.generated.json";
 import { purchasesForUser } from "../../../lib/purchaseLedger";
+import { verifyDownloadToken } from "../../../lib/downloadTokens";
 import { createDropboxClient } from "../../../scripts/dropboxClient";
 
 const DROPBOX_COLLECTIONS_ROOT = "/josh-and-brad/photo-presets/collections";
@@ -32,18 +33,23 @@ export default async function handler(req, res) {
   }
 
   try {
-    const user = await currentUser();
-    if (!user?.id) {
+    const tokenClaims = verifyDownloadToken(req.query.token, collectionId);
+    const user = tokenClaims ? null : await currentUser();
+    if (!tokenClaims && !user?.id) {
       res.status(401).json({ error: "Please log in to download this collection." });
       return;
     }
 
-    if (!DEV_AUTH_BYPASS_ENABLED) {
-      const purchases = await purchasesForUser(user.id);
+    if (!DEV_AUTH_BYPASS_ENABLED || tokenClaims) {
+      const ownerId = tokenClaims?.userId || user.id;
+      const purchases = await purchasesForUser(ownerId);
       const ownsCollection = purchases.some(
         (purchase) =>
           purchase.status === "paid" &&
-          purchase.collectionIds?.includes(collectionId),
+          purchase.collectionIds?.includes(collectionId) &&
+          (!tokenClaims ||
+            (purchase.provider === tokenClaims.provider &&
+              purchase.providerPaymentId === tokenClaims.providerPaymentId)),
       );
 
       if (!ownsCollection) {

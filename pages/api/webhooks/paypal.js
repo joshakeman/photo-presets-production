@@ -1,5 +1,5 @@
 import { paypalRequest, verifyPayPalWebhook } from "../../../lib/paypal";
-import { recordPurchase } from "../../../lib/purchaseLedger";
+import { fulfillPurchase } from "../../../lib/purchaseDelivery";
 import { readRawBody } from "../../../lib/rawBody";
 
 export const config = { api: { bodyParser: false } };
@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       ) || unit?.payments?.captures?.[0];
 
       if (order.status === "COMPLETED" && unit?.custom_id && capture?.status === "COMPLETED") {
-        await recordPurchase({
+        await fulfillPurchase({
           userId: unit.custom_id,
           provider: "paypal",
           providerPaymentId: capture.id,

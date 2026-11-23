@@ -1,6 +1,6 @@
 import { getUser } from "@netlify/identity";
 import { paypalRequest } from "../../../lib/paypal";
-import { recordPurchase } from "../../../lib/purchaseLedger";
+import { fulfillPurchase } from "../../../lib/purchaseDelivery";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     }
 
     try {
-      await recordPurchase({
+      await fulfillPurchase({
         userId: user.id,
         provider: "paypal",
         providerPaymentId: capture.id,
@@ -39,8 +39,8 @@ export default async function handler(req, res) {
         currency: capture.amount?.currency_code,
         purchasedAt: capture.create_time || new Date().toISOString(),
       });
-    } catch (ledgerError) {
-      console.error("PayPal payment captured; webhook must record it:", ledgerError);
+    } catch (fulfillmentError) {
+      console.error("PayPal payment captured; webhook must finish fulfillment:", fulfillmentError);
     }
 
     return res.status(200).json({ status: "COMPLETED" });

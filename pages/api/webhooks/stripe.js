@@ -1,5 +1,5 @@
 import Stripe from "stripe";
-import { recordPurchase } from "../../../lib/purchaseLedger";
+import { fulfillPurchase } from "../../../lib/purchaseDelivery";
 import { readRawBody } from "../../../lib/rawBody";
 
 export const config = { api: { bodyParser: false } };
@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     ) {
       const session = event.data.object;
       if (session.payment_status === "paid" && session.metadata?.user_id) {
-        await recordPurchase({
+        await fulfillPurchase({
           userId: session.metadata.user_id,
           provider: "stripe",
           providerPaymentId: session.payment_intent || session.id,

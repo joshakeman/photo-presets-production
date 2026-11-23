@@ -25,7 +25,7 @@ export default function CheckoutSuccessPage() {
             Thank You
           </h1>
           <p className="french-news mx-auto mt-6 max-w-lg text-xl sm:text-2xl">
-            Your checkout is complete. Your purchased presets will be available through your account.
+            Your checkout is complete. We’re sending download links to your e-mail, and your presets are also waiting in your Library.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link href="/downloads" className="menu-btn-lg bourbonbase letterpress-button px-6 py-3 text-xl text-accent">
