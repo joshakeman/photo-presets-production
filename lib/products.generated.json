@@ -592,9 +592,9 @@
   "otherworlds": {
     "title": "Otherworlds",
     "description": "",
-    "menuImage": null,
+    "menuImage": "/images/collections/otherworlds/assets/menu_card.webp",
     "menuImageAlt": "Otherworlds",
-    "buttonImage": null,
+    "buttonImage": "/images/collections/otherworlds/assets/button.webp",
     "href": "otherworlds",
     "price": null,
     "sets": [

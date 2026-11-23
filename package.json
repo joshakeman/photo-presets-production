@@ -5,6 +5,7 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
+    "sync:content": "node scripts/syncContent.js",
     "upload:content": "node scripts/uploadContent.js",
     "dropbox:authorize": "node scripts/authorizeDropbox.js"
   },
