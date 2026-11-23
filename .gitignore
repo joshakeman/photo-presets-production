@@ -14,7 +14,6 @@ pnpm-debug.log*
 
 # ✅ Dependency lock files (if you use a specific package manager)
 # Only include the ones you DON'T use.
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
