@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import Letter from "../../public/images/assets/letter.webp";
 import Logo from "../../public/images/hero-image/logo-no-background.png";
 
@@ -14,6 +15,29 @@ const labelClass =
 export default function ContactPage() {
   const router = useRouter();
   const submitted = router.isReady && router.query.submitted === "true";
+  const [submitting, setSubmitting] = useState(false);
+  const [submissionError, setSubmissionError] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setSubmitting(true);
+    setSubmissionError("");
+
+    try {
+      const formData = new FormData(event.currentTarget);
+      const response = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (!response.ok) throw new Error("Your note could not be sent.");
+      await router.push("/contact?submitted=true");
+    } catch (error) {
+      setSubmissionError(error.message || "Your note could not be sent. Please try again.");
+      setSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -89,10 +113,7 @@ export default function ContactPage() {
             ) : (
               <form
                 name="contact"
-                method="POST"
-                action="/contact?submitted=true"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
                 className="mx-auto mt-8 max-w-xl space-y-5 border-t border-accent/40 pt-8 text-left sm:mt-10 sm:pt-10"
               >
                 <input type="hidden" name="form-name" value="contact" />
@@ -137,11 +158,18 @@ export default function ContactPage() {
                   />
                 </label>
 
+                {submissionError && (
+                  <p className="french-news text-lg text-red-300" role="alert">
+                    {submissionError}
+                  </p>
+                )}
+
                 <button
                   type="submit"
+                  disabled={submitting}
                   className="menu-btn-lg bourbonbase letterpress-button mx-auto block w-full px-10 py-4 text-xl text-accent sm:w-auto sm:min-w-64 sm:text-2xl"
                 >
-                  Send Message
+                  {submitting ? "Sending…" : "Send Message"}
                 </button>
               </form>
             )}
