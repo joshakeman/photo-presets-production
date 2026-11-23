@@ -589,6 +589,301 @@
       }
     ]
   },
+  "otherworlds": {
+    "title": "Otherworlds",
+    "description": "",
+    "menuImage": null,
+    "menuImageAlt": "Otherworlds",
+    "buttonImage": null,
+    "href": "otherworlds",
+    "price": null,
+    "sets": [
+      {
+        "title": "Bradbury",
+        "titleCard": null,
+        "presets": [
+          {
+            "title": "Monster",
+            "author": "Bradbury",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/monster/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/monster/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Montag",
+            "author": "Bradbury",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/montag/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/montag/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Pandemonium",
+            "author": "Bradbury",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/pandemonium/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/pandemonium/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Phelps",
+            "author": "Bradbury",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/phelps/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/phelps/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Ylla",
+            "author": "Bradbury",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/ylla/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/bradbury/ylla/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Shelley",
+        "titleCard": null,
+        "presets": [
+          {
+            "title": "Adam",
+            "author": "Shelley",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/shelley/adam/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/shelley/adam/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Genoa",
+            "author": "Shelley",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/shelley/genoa/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/shelley/genoa/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Lionel",
+            "author": "Shelley",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/shelley/lionel/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/shelley/lionel/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Valerius",
+            "author": "Shelley",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/shelley/valerius/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/shelley/valerius/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Winzy",
+            "author": "Shelley",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/shelley/winzy/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/shelley/winzy/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Verne",
+        "titleCard": null,
+        "presets": [
+          {
+            "title": "Columbiad",
+            "author": "Verne",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/verne/columbiad/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/verne/columbiad/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Nautilus",
+            "author": "Verne",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/verne/nautilus/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/verne/nautilus/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Snaefell",
+            "author": "Verne",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/verne/snaefell/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/verne/snaefell/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Spilett",
+            "author": "Verne",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/verne/spilett/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/verne/spilett/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Victoria",
+            "author": "Verne",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/verne/victoria/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/verne/victoria/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      },
+      {
+        "title": "Wells",
+        "titleCard": null,
+        "presets": [
+          {
+            "title": "Filby",
+            "author": "Wells",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/wells/filby/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/wells/filby/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Griffin",
+            "author": "Wells",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/wells/griffin/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/wells/griffin/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Horsell",
+            "author": "Wells",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/wells/horsell/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/wells/horsell/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Prendick",
+            "author": "Wells",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/wells/prendick/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/wells/prendick/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          },
+          {
+            "title": "Selene",
+            "author": "Wells",
+            "before": {
+              "imageUrl": "/images/collections/otherworlds/wells/selene/before.webp"
+            },
+            "after": {
+              "imageUrl": "/images/collections/otherworlds/wells/selene/after.webp"
+            },
+            "quote": "",
+            "quotefrom": "",
+            "alt": ""
+          }
+        ]
+      }
+    ]
+  },
   "poets-1": {
     "title": "Poets Collection I",
     "description": "A lyrical collection of presets inspired by the imagery, rhythm, and emotional landscapes of Emily Dickinson, William Carlos Williams, Phillis Wheatley, and Walt Whitman.",
